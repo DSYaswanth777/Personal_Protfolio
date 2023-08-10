@@ -37,7 +37,11 @@ function Hero_Section() {
 
         <div className="">
           <div className="flex flex-col gap-7 cursor-pointer pt-20">
-            <a  href='https://github.com/DSYaswanth777' target="_blank" className="bg-white rounded-full p-3 shadow-md relative group  ">
+            <a
+              href="https://github.com/DSYaswanth777"
+              target="_blank"
+              className="bg-white rounded-full p-3 shadow-md relative group  "
+            >
               <div className="flex items-center">
                 <FaGithub size={20} />
                 <span className="absolute -right-24 w-0 group-hover:w-24 h-8 rounded-full opacity-0 transition-all duration-300 group-hover:opacity-100 flex items-center p-5">
@@ -45,7 +49,11 @@ function Hero_Section() {
                 </span>
               </div>
             </a>
-            <a href='https://www.linkedin.com/in/dasari-srinivasa-yaswanth-7a752619b/' target="_blank" className="bg-white rounded-full p-3 shadow-md relative group  ">
+            <a
+              href="https://www.linkedin.com/in/dasari-srinivasa-yaswanth-7a752619b/"
+              target="_blank"
+              className="bg-white rounded-full p-3 shadow-md relative group  "
+            >
               <div className="flex items-center">
                 <span className="absolute -right-24 w-0 group-hover:w-24 h-8 rounded-full opacity-0 transition-all duration-300 group-hover:opacity-100 flex items-center p-5">
                   Linkdlen
@@ -53,7 +61,11 @@ function Hero_Section() {
                 <FaLinkedinIn size={20} />
               </div>
             </a>
-            <a  href='https://twitter.com/dsyaswanth' target='_blank' className="bg-white rounded-full p-3 shadow-md relative group  ">
+            <a
+              href="https://twitter.com/dsyaswanth"
+              target="_blank"
+              className="bg-white rounded-full p-3 shadow-md relative group  "
+            >
               <div className="flex items-center">
                 <span className="absolute -right-24 w-0 group-hover:w-24 h-8 rounded-full opacity-0 transition-all duration-300 group-hover:opacity-100 flex items-center p-5">
                   Twitter
@@ -61,7 +73,11 @@ function Hero_Section() {
                 <FaTwitter size={20} />
               </div>
             </a>
-            <a  href='https://www.instagram.com/dasari_yaswanthh/' target="_blank" className="bg-white rounded-full p-3 shadow-md relative group ">
+            <a
+              href="https://www.instagram.com/dasari_yaswanthh/"
+              target="_blank"
+              className="bg-white rounded-full p-3 shadow-md relative group "
+            >
               <div className="flex items-center">
                 <span className="absolute -right-24 w-0 group-hover:w-24 h-8 rounded-full opacity-0 transition-all duration-300 group-hover:opacity-100 flex items-center p-5">
                   Instagram

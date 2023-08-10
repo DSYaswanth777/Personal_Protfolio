@@ -37,7 +37,7 @@ function Header() {
               About Me
             </a>
           </li>
-          
+
           <li className="my-6 md:my-0">
             <a href="#" className="text-md hover:text-cyan-500 duration-500">
               Works
@@ -51,7 +51,6 @@ function Header() {
               Contact
             </a>
           </li>
-          
         </ul>
       </nav>
     </div>

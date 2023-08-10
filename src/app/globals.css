@@ -22,6 +22,8 @@ body{
   gap: 20px;
   justify-content: center;
   align-items:center ;
+  transition: all 0.4s ease-in-out;
+
 }
 .skills-section p{
   background-color: white;
@@ -41,9 +43,10 @@ color: #F9F4F4;
 .skills-section :hover{
   background-color: black;
 color: #F9F4F4;
+transform: scale(1.1);
+  transition-delay: 0.15s; 
 }
 
-/* Add this CSS to your stylesheet or component's style block */
 .step-dot {
   width: 16px;
   height: 16px;
