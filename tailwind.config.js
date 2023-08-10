@@ -11,7 +11,7 @@ module.exports = {
     },
     colors: {
       'customBlack': '#1F1F29',
-      'white':'#FFFFF'
+      'white':'#F9F4F4'
     },
     extend: {
       backgroundImage: {
