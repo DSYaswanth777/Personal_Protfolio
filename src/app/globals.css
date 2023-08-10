@@ -1,27 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap'); */
+  @font-face {
+    font-family: myFirstFont;
+    src: url('../../public/fonts/RocaOne-Rg.ttf');
+  }
+body{
+    background-color: #F9F4F4;
+    /* font-family: 'Space Mono', monospace !important;     */
+    font-family: myFirstFont !important;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Common styles for all skill items */
+.skill-item {
+  p {
+    text-align: center;
+    padding-top: 2px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Alternate styles for odd skill items (black background, white text) */
+.skill-item:nth-child(odd) {
+  background-color: black;
+  color: white;
 }
+.skills-section{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  /* column-gap: 30px; */
+  gap: 20px;
+  justify-content: center;
+  align-items:center ;
+}
+/* Alternate styles for even skill items (white background, black text) */
+.skill-item:nth-child(even) {
+  background-color: white;
+  color: black;
+}
+
