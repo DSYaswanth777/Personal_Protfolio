@@ -2,13 +2,13 @@ import React from "react";
 
 function Personal_Info() {
   return (
-    <div className="container md:mx-auto h-screen pt-36">
+    <div className="container md:mx-auto h-full pt-36">
       <div className="flex justify-around flex-col">
         <div className="text-center">
           <p className="font-extra-bold text-3xl underline underline-offset-4 ">About Me</p>
           <p className="text-xl pt-4">Get to Know more about me</p>
         </div>
-        <div className="flex justify-center gap-32 pt-8">
+        <div className="flex justify-center flex-col  md:flex-col lg:flex-row pt-8 gap-16 px-12">
           <div className="relative">
             <div className="step-dot"></div>
             <div className="step-line"></div>
@@ -30,7 +30,7 @@ function Personal_Info() {
               <a href="" className="underline underline-offset-2 font-extra-bold">Hire me</a>
             </div>
           </div>
-          <div className="border-l-4"></div>
+          <div className="border-b-4 md:border-l-4 "></div>
           <div className="relative">
             <div className="step-dot"></div>
             <div className="step-line"></div>

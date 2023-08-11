@@ -1,9 +1,10 @@
-import Header from "@/components/Header";
-import Hero_Section from "@/components/Hero_Section";
-import Personal_Info from "@/components/Personal_Info";
-import Projects_Section from "@/components/Projects_Section";
-import Skils_Section from "@/components/Skils_Section";
-import Contactme_Section from "@/components/contactme_Section";
+import Header from "@/components/header";
+import Hero_Section from "@/components/hero_Section";
+import Personal_Info from "@/components/personal_Info";
+import Projects_Section from "@/components/projects_Section";
+import Skils_Section from "@/components/skils_Section";
+import Contactme_Section from "@/components/contactme_section";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Personal_Info />
       <Projects_Section/>
       <Contactme_Section/>
+      <Footer/>
     </div>
   );
 }

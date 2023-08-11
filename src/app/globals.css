@@ -8,8 +8,9 @@
   }
 body{
     background-color: #F9F4F4;
-    /* font-family: 'Space Mono', monospace !important;     */
     font-family: myFirstFont !important;
+    overflow-x:hidden !important;
+    max-width: 100%;
 }
 
 
@@ -25,8 +26,20 @@ body{
   transition: all 0.4s ease-in-out;
 
 }
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+
+  .skills-section{
+    grid-template-columns: auto auto auto auto auto ;
+  }
+}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  
+  .skills-section{
+    grid-template-columns: auto auto  ;
+  }
+}
 .skills-section p{
-  background-color: white;
+  background-color: #ffffff;
   padding: 10px;
   text-align: center;
   border-radius: 15px;
@@ -67,4 +80,22 @@ transform: scale(1.1);
   top: 53px;
   left: -25px;
 }
+.zoom-effect:hover {
+  transform: scale(1.2); /* Increase the scale to zoom in */
+  transition: transform 0.8s ease-in-out; /* Add a smooth transition */
+}
+  input{
+    width: 100%;
+    height: 35px;
+    background-color: #F9F4F4;
+  }
+  
+  textarea{
+    width: 100%;
+  background-color: #F9F4F4;
 
+  }
+label{
+  text-align: left !important;
+
+}
