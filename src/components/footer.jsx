@@ -27,7 +27,7 @@ function footer() {
             </div>
           </a>
           <a
-            href="https://www.linkedin.com/in/dasari-srinivasa-yaswanth-7a752619b/"
+            href="mailto:dsyaswanth777@gmail.com"
             target="_blank"
             className="bg-white rounded-full p-3  border-4 shadow-xl relative group zoom-effect "
           >
