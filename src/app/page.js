@@ -1,11 +1,11 @@
 "use client";
-import Header from "@/components/header";
-import Hero_Section from "@/components/hero_Section";
-import Personal_Info from "@/components/personal_Info";
-import Projects_Section from "@/components/projects_Section";
-import Skills_Section from "@/components/Skills_Section";
-import Contactme_Section from "@/components/contactme_section";
-import Footer from "@/components/footer";
+import Header from "../components/header";
+import Hero_Section from "../components/hero_Section";
+import Personal_Info from "../components/personal_Info";
+import Projects_Section from "../components/projects_Section";
+import Skills_Section from "../components/skills_Section";
+import Contactme_Section from "../components/contactme_section";
+import Footer from "../components/footer";
 import { useRef } from "react";
 
 export default function Home() {
