@@ -199,7 +199,7 @@ const Projects_Section = forwardRef((props, ref) => {
               application, showcasing impactful cart features and skillful state
               management for a seamless user experience. By seamlessly
               integrating essential cart features and demonstrating adeptness in
-              React's custom hooks for efficient state management,
+              React &apos;s custom hooks for efficient state management,
             </p>
             <div className="flex justify-center gap-5 pt-5">
               <p className="uppercase p-2 bg-white rounded-md shadow-md">
@@ -247,5 +247,6 @@ const Projects_Section = forwardRef((props, ref) => {
     </div>
   );
 });
+Projects_Section.displayName = "Projects_Section"; // Add this line
 
 export default Projects_Section;

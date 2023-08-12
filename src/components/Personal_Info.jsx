@@ -68,5 +68,6 @@ const Personal_Info = forwardRef((props, ref) => {
     </div>
   );
 });
+Personal_Info.displayName = "Personal_Info";
 
 export default Personal_Info;

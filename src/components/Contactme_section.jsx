@@ -3,8 +3,7 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 import { BiPhone } from "react-icons/bi";
 import { forwardRef } from "react";
 // function contactme_Section() {
-  const contactme_Section = forwardRef((props, ref) => {
-
+const contactme_Section = forwardRef((props, ref) => {
   const handleEmailClick = () => {
     window.location.href = "mailto:dsyaswanth777@gmail.com";
   };
@@ -44,6 +43,7 @@ import { forwardRef } from "react";
       </div>
     </div>
   );
-})
+});
+contactme_Section.displayName = "ContactMeSection"; // Add this line
 
 export default contactme_Section;
