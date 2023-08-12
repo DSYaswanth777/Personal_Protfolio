@@ -18,7 +18,7 @@ const Skils_Section = forwardRef((props, ref) => {
             <div className="skills-section pt-10">
               <p>HTML</p> <p>CSS</p> <p>Javascript</p> <p>Bootstrap</p>{" "}
               <p>Sass</p> <p>tailwind CSS</p> <p>Bootstrap</p> <p>React.Js</p>{" "}
-              <p>Next.Js</p>
+              <p>Next.Js</p><p>Github</p>
               <p>Python</p> <p>C++</p>
             </div>
           </div>
