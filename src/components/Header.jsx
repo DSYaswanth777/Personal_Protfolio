@@ -44,7 +44,7 @@ function Header({ scrollToSection }) {
     <div className="container mx-auto">
       <nav className="p-5 md:flex md:items-center md:justify-around bg-white border-b-4 container md:mx-auto z-10 fixed">
         <div className="flex justify-between items-center">
-          <span className="font-bold text-md">Yaswanth</span>
+          <span className="font-extra-bold text-lg uppercase">Yaswanth</span>
           <span className="cursor-pointer md:hidden block" onClick={toggleMenu}>
             {isMenuOpen ? <HiX /> : <HiMenuAlt3 />}
           </span>

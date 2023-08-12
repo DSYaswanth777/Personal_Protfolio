@@ -3,7 +3,7 @@ import Header from "@/components/header";
 import Hero_Section from "@/components/hero_Section";
 import Personal_Info from "@/components/personal_Info";
 import Projects_Section from "@/components/projects_Section";
-import Skils_Section from "@/components/skils_Section";
+import Skills_Section from "@/components/Skills_Section";
 import Contactme_Section from "@/components/contactme_section";
 import Footer from "@/components/footer";
 import { useRef } from "react";
@@ -49,7 +49,7 @@ export default function Home() {
     <div>
       <Header scrollToSection={scrollToSection} />
       <Hero_Section ref={heroRef}/>
-      <Skils_Section ref={skillsRef} />
+      <Skills_Section ref={skillsRef} />
       <Personal_Info ref={personalRef}/>
       <Projects_Section ref={projectsRef} />
       <Contactme_Section ref={contactRef}/>

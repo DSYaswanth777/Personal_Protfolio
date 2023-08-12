@@ -1,6 +1,6 @@
 "use client";
 import { forwardRef } from "react";
-const Skils_Section = forwardRef((props, ref) => {
+const Skills_Section = forwardRef((props, ref) => {
   return (
     <div className="h-full container md:mx-auto px-12 pt-32" ref={ref}>
       <div className="flex justify-center items-center flex-row gap-6 md:mx-auto ">
@@ -13,12 +13,12 @@ const Skils_Section = forwardRef((props, ref) => {
           <div className="flex flex-col">
             <p className="text-2xl font-extra-bold text-center">My Skill Set</p>
             <h1 className="pt-2 text-lg text-center">
-              List of tech/tools I've worked with
+              List of tech/tools I &apos; ve worked with
             </h1>
             <div className="skills-section pt-10">
               <p>HTML</p> <p>CSS</p> <p>Javascript</p> <p>Bootstrap</p>{" "}
               <p>Sass</p> <p>tailwind CSS</p> <p>Bootstrap</p> <p>React.Js</p>{" "}
-              <p>Next.Js</p>
+              <p>Next.Js</p><p>Github</p>
               <p>Python</p> <p>C++</p>
             </div>
           </div>
@@ -50,5 +50,6 @@ const SkillItem = ({ title, status }) => (
     <div className="bg-customBlack p-1 rounded text-white">{status}</div>
   </div>
 );
+Skills_Section.displayName = "Skills_Section"; 
 
-export default Skils_Section;
+export default Skills_Section;
