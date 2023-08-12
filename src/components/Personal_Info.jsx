@@ -1,11 +1,12 @@
-import React from "react";
-
-function Personal_Info() {
+import React, { forwardRef } from "react";
+const Personal_Info = forwardRef((props, ref) => {
   return (
-    <div className="container md:mx-auto h-full pt-36">
+    <div className="container md:mx-auto h-full pt-36" ref={ref}>
       <div className="flex justify-around flex-col">
         <div className="text-center">
-          <p className="font-extra-bold text-3xl underline underline-offset-4 ">About Me</p>
+          <p className="font-extra-bold text-3xl underline underline-offset-4 ">
+            About Me
+          </p>
           <p className="text-xl pt-4">Get to Know more about me</p>
         </div>
         <div className="flex justify-center flex-col  md:flex-col lg:flex-row pt-8 gap-16 px-12">
@@ -20,14 +21,23 @@ function Personal_Info() {
                 Trainee Web Developer (Internship)
               </div>
               <p>11/2022 - 05/2023</p>
-              <div className="text-lg font-bold ">Zignuts Techno Lab Pvt Ltd.</div>
+              <div className="text-lg font-bold ">
+                Zignuts Techno Lab Pvt Ltd.
+              </div>
             </div>
             <div className="relative">
               <div className="step-dot"></div>
               <div className="text-xl font-extra-bold pt-12">
                 Looking for new position !
               </div>
-              <a href="" className="underline underline-offset-2 font-extra-bold">Hire me</a>
+              <a
+                href="https://drive.google.com/file/d/1n9yvqz1C8oNqxGtHAlLFN5KyKGNKEPiw/view?usp=sharing
+              "
+                className="underline underline-offset-2 font-extra-bold"
+                target="_blank"
+              >
+                Hire me
+              </a>
             </div>
           </div>
           <div className="border-b-4 md:border-l-4 "></div>
@@ -57,6 +67,6 @@ function Personal_Info() {
       </div>
     </div>
   );
-}
+});
 
 export default Personal_Info;

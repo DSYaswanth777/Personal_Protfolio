@@ -1,15 +1,16 @@
 "use client";
-import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
-
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { BiPhone } from "react-icons/bi";
-function contactme_Section() {
+import { forwardRef } from "react";
+// function contactme_Section() {
+  const contactme_Section = forwardRef((props, ref) => {
+
   const handleEmailClick = () => {
     window.location.href = "mailto:dsyaswanth777@gmail.com";
   };
 
   return (
-    <div className="h-screen pt-32 container md:mx-auto mb-20">
+    <div className="h-full pt-32 container md:mx-auto mb-20" ref={ref}>
       <div className="text-3xl font-extra-bold text-center underline underline-offset-4 pb-12 ">
         Contact
       </div>
@@ -43,6 +44,6 @@ function contactme_Section() {
       </div>
     </div>
   );
-}
+})
 
 export default contactme_Section;

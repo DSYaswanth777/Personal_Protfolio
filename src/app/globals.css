@@ -10,7 +10,7 @@ body{
     background-color: #F9F4F4;
     font-family: myFirstFont !important;
     overflow-x:hidden !important;
-    max-width: 100%;
+    /* max-width: 99% !important; */
 }
 
 
@@ -18,7 +18,7 @@ body{
 
 .skills-section{
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto ;
   /* column-gap: 30px; */
   gap: 20px;
   justify-content: center;
@@ -98,4 +98,32 @@ transform: scale(1.1);
 label{
   text-align: left !important;
 
+}
+.nav-link {
+  /* padding: 20px 0px ; */
+  color: #1F1F29;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 4px;
+  content: "";
+  position: absolute;
+  background-color: #1F1F29;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: -8px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
 }
