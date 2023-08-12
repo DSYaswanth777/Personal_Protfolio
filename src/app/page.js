@@ -1,5 +1,5 @@
 "use client";
-import Header from "../components/header";
+import Header from "../components/header.jsx";
 import Hero_Section from "../components/hero_Section";
 import Personal_Info from "../components/personal_Info";
 import Projects_Section from "../components/projects_Section";
