@@ -1,8 +1,10 @@
+//**Next Image import */
 import Image from "next/image";
+//**Project Images */
 import project from "../../public/images/project.png";
 import project2 from "../../public/images/project2.png";
 import project3 from "../../public/images/project3.png";
-
+//**React Icon  imports */
 import { FaGithub } from "react-icons/fa";
 import { GrShare } from "react-icons/gr";
 import { forwardRef } from "react";

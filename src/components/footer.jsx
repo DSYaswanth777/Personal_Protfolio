@@ -1,4 +1,6 @@
+//**React Imports */
 import React from "react";
+//**React-Icon Imports */
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMailOpen } from "react-icons/hi";
 function footer() {
@@ -6,8 +8,7 @@ function footer() {
     <div className="bg-customBlack">
       <div className=" container md:mx-auto flex justify-between items-center h-full py-16 gap-8  flex-col px-6">
         <p className="text-white font-extra-bold">&copy;2023.Yaswanth Dasari</p>
-
-            <div className="flex flex-row gap-3">
+        <div className="flex flex-row gap-3">
           <a
             href="https://github.com/DSYaswanth777"
             target="_blank"
@@ -32,8 +33,7 @@ function footer() {
             className="bg-white rounded-full p-3  border-4 shadow-xl relative group zoom-effect "
           >
             <div className="flex items-center">
-          <HiOutlineMailOpen size={20} />
-              
+              <HiOutlineMailOpen size={20} />
             </div>
           </a>
         </div>

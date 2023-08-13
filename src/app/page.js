@@ -1,3 +1,4 @@
+// Import necessary components and modules
 "use client";
 import Header from "../components/header";
 import Hero_Section from "../components/hero_Section";
@@ -8,14 +9,16 @@ import Contactme_Section from "../components/contactme_section";
 import Footer from "../components/footer";
 import { useRef } from "react";
 
+// Define the main Home component
 export default function Home() {
+  // Create refs to scroll to specific sections
   const heroRef = useRef(null);
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
   const personalRef = useRef(null);
   const projectsRef = useRef(null);
 
-
+  // Function to scroll to a specific section
   const scrollToSection = (section) => {
     let elementRef;
     switch (section) {
@@ -38,6 +41,7 @@ export default function Home() {
         break;
     }
 
+    // Perform smooth scroll to the selected section
     if (elementRef.current) {
       window.scrollTo({
         top: elementRef.current.offsetTop,
@@ -45,14 +49,21 @@ export default function Home() {
       });
     }
   };
+
+  // Render the Home component
   return (
     <div>
+      {/* Render the Header component and pass the scrollToSection function */}
       <Header scrollToSection={scrollToSection} />
-      <Hero_Section ref={heroRef}/>
+
+      {/* Render each section using their respective components and attach the refs */}
+      <Hero_Section ref={heroRef} />
       <Skills_Section ref={skillsRef} />
-      <Personal_Info ref={personalRef}/>
+      <Personal_Info ref={personalRef} />
       <Projects_Section ref={projectsRef} />
-      <Contactme_Section ref={contactRef}/>
+      <Contactme_Section ref={contactRef} />
+
+      {/* Render the Footer component */}
       <Footer />
     </div>
   );

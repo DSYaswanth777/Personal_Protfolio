@@ -1,8 +1,9 @@
 "use client";
+//**React-Icon Imports */
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { BiPhone } from "react-icons/bi";
 import { forwardRef } from "react";
-// function contactme_Section() {
+
 const contactme_Section = forwardRef((props, ref) => {
   const handleEmailClick = () => {
     window.location.href = "mailto:dsyaswanth777@gmail.com";
@@ -34,7 +35,7 @@ const contactme_Section = forwardRef((props, ref) => {
         </div>
         <p className="text-xl pt-5 font-extra-bold ">Phone</p>
         <a
-          href="mailto:dsyaswanth777@gmail.com"
+          href="tel:+919100297633"
           className="text-xl font-bold text-center pt-2 "
         >
           {" "}
@@ -44,6 +45,6 @@ const contactme_Section = forwardRef((props, ref) => {
     </div>
   );
 });
-contactme_Section.displayName = "ContactMeSection"; // Add this line
+contactme_Section.displayName = "ContactMeSection"; 
 
 export default contactme_Section;

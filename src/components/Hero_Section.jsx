@@ -1,11 +1,16 @@
 "use client";
+//**Lottie Animated icon import */
 import Animation from "../../public/icons/Hello-Lottie.json";
+//**Lottie animated icon import  */
 import Lottie from "lottie-react";
+//**Nextjs image import */
 import Image from "next/image";
+//**Social media icon svg import */
 import LinkedinIn from "../../public/icons/linkedin_icon.svg";
 import Twitter from "../../public/icons/twitter_icon.svg";
 import Instagram from "../../public/icons/instagram_icon.svg";
 import Github from "../../public/icons/github_icon.svg";
+//**forwardRef Import from react */
 import { forwardRef } from "react";
 
 const Hero_Section = forwardRef((props, ref) => {
@@ -26,8 +31,7 @@ const Hero_Section = forwardRef((props, ref) => {
                 A Passionate Front-End Developer
               </p>
               <a
-                href="https://drive.google.com/file/d/1n9yvqz1C8oNqxGtHAlLFN5KyKGNKEPiw/view?usp=sharing
-              "
+                href="https://drive.google.com/file/d/1DqmGl3as8uc11rZ0xBFYs18ylN-N5UrC/view?usp=sharing"
                 target="_blank"
               >
                 <button className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack mt-5 ">

@@ -1,4 +1,5 @@
 "use client";
+//**Importing forwardRef from react */
 import { forwardRef } from "react";
 const Skills_Section = forwardRef((props, ref) => {
   return (

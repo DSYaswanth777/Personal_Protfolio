@@ -31,8 +31,7 @@ const Personal_Info = forwardRef((props, ref) => {
                 Looking for new position !
               </div>
               <a
-                href="https://drive.google.com/file/d/1n9yvqz1C8oNqxGtHAlLFN5KyKGNKEPiw/view?usp=sharing
-              "
+                href="https://drive.google.com/file/d/1DqmGl3as8uc11rZ0xBFYs18ylN-N5UrC/view?usp=sharing           "
                 className="underline underline-offset-2 font-extra-bold"
                 target="_blank"
               >

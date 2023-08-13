@@ -1,16 +1,22 @@
+//**React Imports */
 import React, { useEffect, useRef, useState } from "react";
+//**React-Icon Imports */
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 function Header({ scrollToSection }) {
+  //**State to open and close navbar menu */
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuRef = useRef(null); // Ref to the menu container
-
+   //**Ref to the menu container */ 
+  const menuRef = useRef(null);
+//**Menu Toggle Function */
   const toggleMenu = () => {
     setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
   };
+  //**Menu close Function */
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+  //**Function scroll specific section based on navbar menu item click */
   const handleScrollTo = (section, e) => {
     scrollToSection(section);
     closeMenu();
@@ -31,7 +37,7 @@ function Header({ scrollToSection }) {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, [isMenuOpen]);
-
+//**Array for navabr items */
   const navItems = [
     { section: "hero", label: "Home" },
     { section: "personal", label: "About Me" },
