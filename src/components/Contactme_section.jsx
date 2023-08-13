@@ -27,7 +27,7 @@ const contactme_Section = forwardRef((props, ref) => {
         </div>
         <p className="text-xl pt-5 font-extra-bold ">Email</p>
         <a
-          href={`mailto:{dsyaswanth777@gmail.com}`}
+          href={'mailto:dsyaswanth777@gmail.com'}
           className="text-xl font-bold text-center pt-2"
         >
           {" "}
