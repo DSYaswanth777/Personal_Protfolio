@@ -8,6 +8,9 @@ const contactme_Section = forwardRef((props, ref) => {
   const handleEmailClick = () => {
     window.location.href = "mailto:dsyaswanth777@gmail.com";
   };
+  const handleMobileClick = () => {
+    window.location.href = "tel:+919100297633";
+  };
 
   return (
     <div className="h-full pt-32 container md:mx-auto mb-20" ref={ref}>
@@ -24,14 +27,14 @@ const contactme_Section = forwardRef((props, ref) => {
         </div>
         <p className="text-xl pt-5 font-extra-bold ">Email</p>
         <a
-          href={`mailto:{dsyaswanth777@gmail.com}`}
+          href={'mailto:dsyaswanth777@gmail.com'}
           className="text-xl font-bold text-center pt-2"
         >
           {" "}
           dsyaswanth777@gmail.com
         </a>
-        <div className="p-5 shadow-lg rounded-full border-2 mt-10 flex zoom-effect ">
-          <BiPhone size={30} />
+        <div className="p-5 shadow-lg rounded-full border-2 mt-10 flex zoom-effect " onClick={handleMobileClick}>
+          <BiPhone size={30} onClick={handleMobileClick} />
         </div>
         <p className="text-xl pt-5 font-extra-bold ">Phone</p>
         <a
