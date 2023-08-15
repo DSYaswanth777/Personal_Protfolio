@@ -25,7 +25,7 @@ const Projects_Section = forwardRef((props, ref) => {
       <div className="pt-16 px-5 flex flex-col gap-10">
         <div className="bg-normalWhite p-10 rounded-xl shadow-xl flex gap-10 flex-col md:flex-col lg:flex-row justify-center items-center">
           <div className="border-4 rounded-lg hover:backdrop-blur-lg cursor-pointer relative group">
-            <Image src={project} alt="Project"  />
+            <Image src={project} alt="Project" />
             <div className="absolute inset-0 flex items-center justify-center group-hover:backdrop-blur-lg transition-all duration-300 opacity-0 group-hover:opacity-100">
               <div className="text-center">
                 <div className="flex gap-5 cursor-pointer">
@@ -73,15 +73,23 @@ const Projects_Section = forwardRef((props, ref) => {
             </div>
             <div className="flex gap-5 pt-5 justify-center cursor-pointer">
               <div className="flex gap-2">
-                <p className="text-lg font-bold hover:border-b-2 cursor-pointer">
+                <a
+                  href="https://github.com/DSYaswanth777/Marketing_Landing_Page"
+                  target="_blank"
+                  className="text-lg font-bold hover:border-b-2 cursor-pointer"
+                >
                   Code
-                </p>
+                </a>
                 <FaGithub size={25} />
               </div>
               <div className="flex gap-2">
-                <p className="text-lg font-bold hover:border-b-2 cursor-pointer">
+                <a
+                  href="https://marketing-landing-page-gray.vercel.app/"
+                  target="_blank"
+                  className="text-lg font-bold hover:border-b-2 cursor-pointer"
+                >
                   Demo
-                </p>
+                </a>
                 <GrShare size={20} />
               </div>
             </div>

@@ -8,7 +8,7 @@ import Skills_Section from "../components/skills_Section";
 import Contactme_Section from "../components/contactme_section";
 import Footer from "../components/footer";
 import { useRef } from "react";
-
+import "./globals.css"
 // Define the main Home component
 export default function Home() {
   // Create refs to scroll to specific sections

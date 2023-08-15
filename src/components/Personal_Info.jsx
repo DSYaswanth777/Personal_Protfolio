@@ -7,7 +7,8 @@ const Personal_Info = forwardRef((props, ref) => {
           <p className="font-extra-bold text-3xl underline underline-offset-4 ">
             About Me
           </p>
-          <p className="text-xl pt-4">Get to Know more about me</p>
+          <p className="text-xl pt-4 font-extra-bold underline underline-offset-4">Get to Know more about me</p>
+          
         </div>
         <div className="flex justify-center flex-col  md:flex-col lg:flex-row pt-8 gap-16 px-12">
           <div className="relative">

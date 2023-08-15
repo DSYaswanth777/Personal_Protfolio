@@ -40,8 +40,8 @@ function Header({ scrollToSection }) {
 //**Array for navabr items */
   const navItems = [
     { section: "hero", label: "Home" },
-    { section: "personal", label: "About Me" },
     { section: "skills", label: "Skills" },
+    { section: "personal", label: "About Me" },
     { section: "projects", label: "Works" },
     { section: "contact", label: "Contact" },
   ];
@@ -52,7 +52,7 @@ function Header({ scrollToSection }) {
         <div className="flex justify-between items-center">
           <span className="font-extra-bold text-lg uppercase">Yaswanth</span>
           <span className="cursor-pointer md:hidden block" onClick={toggleMenu}>
-            {isMenuOpen ? <HiX /> : <HiMenuAlt3 />}
+            {isMenuOpen ? <HiX size={25} /> : <HiMenuAlt3 size={25}/>}
           </span>
         </div>
         <div ref={menuRef}>
