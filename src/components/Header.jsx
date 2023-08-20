@@ -74,10 +74,10 @@ function Header({ scrollToSection }) {
             } transition-all ease-in duration-500`}
           >
             {navItems.map((item) => (
-              <Reveal2>
-
-              <li
-                key={item.section}
+              <Reveal2
+              key={item.section}
+              >
+              <li   
                 className="my-2 text-center font-extra-bold text-xl md:my-0"
               >
                 <a
