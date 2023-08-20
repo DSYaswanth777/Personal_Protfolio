@@ -13,11 +13,39 @@ import Github from "../../public/icons/github_icon.svg";
 //**forwardRef Import from react */
 import { forwardRef } from "react";
 import { Reveal } from "./Reveal";
+import { Reveal2 } from "./Reveal2";
 
 const Hero_Section = forwardRef((props, ref) => {
   const handleEmailClick = () => {
     window.location.href = "mailto:dsyaswanth777@gmail.com";
   };
+  const socialLinks = [
+    {
+      id: 1,
+      link: "https://github.com/DSYaswanth777",
+      icon: Github,
+      alt: "Github",
+    },
+    {
+      id: 2,
+      link: "https://www.linkedin.com/in/dasari-srinivasa-yaswanth-7a752619b/",
+      icon: LinkedinIn,
+      alt: "LinkedIn",
+    },
+    {
+      id: 3,
+      link: "https://twitter.com/dsyaswanth",
+      icon: Twitter,
+      alt: "Twitter",
+    },
+    {
+      id: 4,
+      link: "https://www.instagram.com/dasari_yaswanthh/",
+      icon: Instagram,
+      alt: "Instagram",
+    },
+  ];
+
   return (
     <div className="container md:mx-auto h-full " ref={ref}>
       <div className="flex flex-col md:flex-row  justify-around items-center pt-16 section1 ">
@@ -42,66 +70,47 @@ const Hero_Section = forwardRef((props, ref) => {
               </Reveal>
               <div className="flex gap-3">
                 <a href={"mailto:dsyaswanth777@gmail.com"} target="_blank">
-                  <button
-                    className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack mt-5 "
-                    onClick={handleEmailClick}
-                  >
-                    Hire Me!
-                  </button>
+                  <Reveal2>
+                    <button
+                      className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack mt-5 "
+                      onClick={handleEmailClick}
+                    >
+                      Hire Me!
+                    </button>
+                  </Reveal2>
                 </a>
                 <a
                   href="DSYaswanth_Resume.pdf"
                   download="DSYaswanth_Resume.pdf"
                   target="_blank"
                 >
-                  <button className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack mt-5 ">
-                    Resume
-                  </button>
+                  <Reveal2>
+                    <button className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack mt-5 ">
+                      Resume
+                    </button>
+                  </Reveal2>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div className="pt-">
+        <Reveal2>
           <div className="flex flex-row md:flex-col gap-7  cursor-pointer pt-20 section2">
-            <a
-              href="https://github.com/DSYaswanth777"
-              target="_blank"
-              className="bg-white rounded-full p-3 shadow-xl relative group zoom-effect "
-            >
-              <div className="flex items-center">
-                <Image src={Github} alt="Github"></Image>
-              </div>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/dasari-srinivasa-yaswanth-7a752619b/"
-              target="_blank"
-              className="bg-white rounded-full p-3 shadow-xl relative group zoom-effect "
-            >
-              <div className="flex items-center">
-                <Image src={LinkedinIn} size={12} alt="LinkedinIn"></Image>
-              </div>
-            </a>
-            <a
-              href="https://twitter.com/dsyaswanth"
-              target="_blank"
-              className="bg-white rounded-full p-3 shadow-xl relative group zoom-effect "
-            >
-              <div className="flex items-center">
-                <Image src={Twitter} size={12} alt="Twitter"></Image>
-              </div>
-            </a>
-            <a
-              href="https://www.instagram.com/dasari_yaswanthh/"
-              target="_blank"
-              className="bg-white rounded-full p-3 shadow-xl relative group zoom-effect"
-            >
-              <div className="flex items-center">
-                <Image src={Instagram} size={12} alt="Instagram"></Image>
-              </div>
-            </a>
+            {socialLinks.map((socialLink) => (
+              <a
+                href={socialLink.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={socialLink.id}
+                className="bg-white rounded-full p-3 shadow-xl relative group zoom-effect "
+              >
+                <div className="flex items-center">
+                  <Image src={socialLink.icon} size={12} alt={socialLink.alt} />
+                </div>
+              </a>
+            ))}
           </div>
-        </div>
+        </Reveal2>
       </div>
     </div>
   );

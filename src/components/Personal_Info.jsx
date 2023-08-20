@@ -1,67 +1,103 @@
 import React, { forwardRef } from "react";
+import { Reveal } from "./Reveal";
+import { Reveal2 } from "./Reveal2";
 const Personal_Info = forwardRef((props, ref) => {
   return (
     <div className="container md:mx-auto h-full pt-36" ref={ref}>
-      <div className="flex justify-around flex-col">
+      <div className="flex justify-around flex-col items-center">
         <div className="text-center">
-          <p className="font-extra-bold text-3xl underline underline-offset-4 ">
-            About Me
-          </p>
-          <p className="text-xl pt-4 font-extra-bold underline underline-offset-4">
-            Get to Know more about me
-          </p>
+          <Reveal>
+            <p className="font-extra-bold text-3xl underline underline-offset-4 text-center px-12 ">
+              About Me
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="text-xl pt-4 font-extra-bold underline underline-offset-4 text-center">
+              Get to Know more about me
+            </p>
+          </Reveal>
         </div>
         <div className="flex justify-center flex-col  md:flex-col lg:flex-row pt-8 gap-16 px-12">
           <div className="relative">
             <div className="step-dot"></div>
             <div className="step-line"></div>
-            <h2 className="text-2xl text-center font-extra-bold underline underline-offset-4">
-              Experience
-            </h2>
+            <Reveal>
+              <h2 className="text-2xl text-center font-extra-bold underline underline-offset-4">
+                Experience
+              </h2>
+            </Reveal>
             <div className="py-4">
-              <div className="text-xl font-extra-bold">
-                Trainee Web Developer (Internship)
-              </div>
-              <p>11/2022 - 05/2023</p>
-              <div className="text-lg font-bold ">
-                Zignuts Techno Lab Pvt Ltd.
-              </div>
+              <Reveal>
+                <div className="text-xl font-extra-bold">
+                  Trainee Web Developer (Internship)
+                </div>
+              </Reveal>
+              <Reveal2>
+                <p>11/2022 - 05/2023</p>
+              </Reveal2>
+              <Reveal2>
+                <div className="text-lg font-bold ">
+                  Zignuts Techno Lab Pvt Ltd.
+                </div>
+              </Reveal2>
             </div>
             <div className="relative">
               <div className="step-dot"></div>
-              <div className="text-xl font-extra-bold pt-12">
-                Looking for new position !
-              </div>
-              <a
-                href={"mailto:dsyaswanth777@gmail.com"}
-                className="underline underline-offset-2 font-extra-bold"
-                target="_blank"
-              >
-                Hire me
-              </a>
+              <div className="pt-12"></div>
+              <Reveal>
+                <div className="text-xl font-extra-bold">
+                  Looking for new position !
+                </div>
+              </Reveal>
+              <Reveal2>
+                <a
+                  href={"mailto:dsyaswanth777@gmail.com"}
+                  className="underline underline-offset-2 font-extra-bold"
+                  target="_blank"
+                >
+                  Hire me
+                </a>
+              </Reveal2>
             </div>
           </div>
           <div className="border-b-4 md:border-l-4 "></div>
           <div className="relative">
             <div className="step-dot"></div>
             <div className="step-line"></div>
-            <h2 className="text-2xl text-center font-extra-bold underline underline-offset-4">
-              Education
-            </h2>
+            <Reveal>
+              <h2 className="text-2xl  text-center font-extra-bold underline underline-offset-4">
+                Education
+              </h2>
+            </Reveal>
             <div className="py-4">
-              <div className="text-xl font-extra-bold">
-                B.tech in Computer Science & Engineering
-              </div>
-              <p>Parul Institute of Engineering & Technology</p>
-              <p>CGPA: 7.56/10.0</p>
+              <Reveal>
+                <div className="text-xl font-extra-bold">
+                  B.tech in Computer Science & Engineering
+                </div>
+              </Reveal>
+              <Reveal2>
+                <p>Parul Institute of Engineering & Technology</p>
+              </Reveal2>
+              <Reveal2>
+                <p>CGPA: 7.56/10.0</p>
+              </Reveal2>
             </div>
             <div className="relative">
               <div className="step-dot"></div>
-              <div className="text-xl font-extra-bold pt-8">
-                Intermediate (+2/12th)
-              </div>
-              <p>Narayana Junior college</p>
-              <p>CGPA: 8.17/10.0</p>
+              <div className="pt-8"></div>
+              <Reveal2>
+                <Reveal>
+                  <div className="text-xl font-extra-bold">
+                    Intermediate (+2/12th)
+                  </div>
+                </Reveal>
+              </Reveal2>
+              <Reveal2>
+                <p>Narayana Junior college</p>
+              </Reveal2>
+              <Reveal2>
+                <p>CGPA: 8.17/10.0</p>
+              </Reveal2>
             </div>
           </div>
         </div>

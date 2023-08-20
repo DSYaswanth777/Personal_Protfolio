@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 //**React-Icon Imports */
 import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { Reveal2 } from "./Reveal2";
 
 function Header({ scrollToSection }) {
   //**State to open and close navbar menu */
@@ -51,9 +52,11 @@ function Header({ scrollToSection }) {
     <div className="container mx-auto">
       <nav className="p-5 md:flex md:items-center md:justify-around bg-white border-b-4 container md:mx-auto z-10 fixed">
         <div className="flex justify-between items-center">
-          <span href="#" className="font-extra-bold text-lg uppercase">
-            Yaswanth
-          </span>
+          <Reveal2>
+            <span href="#" className="font-extra-bold text-lg uppercase">
+              Yaswanth
+            </span>
+          </Reveal2>
           <span className="cursor-pointer md:hidden block" onClick={toggleMenu}>
             {isMenuOpen ? <HiX size={25} /> : <HiMenuAlt3 size={25} />}
           </span>
@@ -66,14 +69,16 @@ function Header({ scrollToSection }) {
                 : "md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 backdrop-blur-md "
             } md:items-center gap-10 md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 backdrop-blur-lg text-center ${
               isMenuOpen
-                ? "opacity-100 top-[68px] h-screen "
+                ? "opacity-100 top-[68px] h-screen flex flex-col justify-center items-center"
                 : "opacity-0 top-[-400px]"
             } transition-all ease-in duration-500`}
           >
             {navItems.map((item) => (
+              <Reveal2>
+
               <li
                 key={item.section}
-                className="my-16 font-extra-bold text-xl md:my-0"
+                className="my-2 text-center font-extra-bold text-xl md:my-0"
               >
                 <a
                   href="#"
@@ -83,6 +88,7 @@ function Header({ scrollToSection }) {
                   {item.label}
                 </a>
               </li>
+              </Reveal2>
             ))}
           </ul>
         </div>
