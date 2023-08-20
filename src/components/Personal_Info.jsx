@@ -7,8 +7,9 @@ const Personal_Info = forwardRef((props, ref) => {
           <p className="font-extra-bold text-3xl underline underline-offset-4 ">
             About Me
           </p>
-          <p className="text-xl pt-4 font-extra-bold underline underline-offset-4">Get to Know more about me</p>
-          
+          <p className="text-xl pt-4 font-extra-bold underline underline-offset-4">
+            Get to Know more about me
+          </p>
         </div>
         <div className="flex justify-center flex-col  md:flex-col lg:flex-row pt-8 gap-16 px-12">
           <div className="relative">
@@ -32,7 +33,7 @@ const Personal_Info = forwardRef((props, ref) => {
                 Looking for new position !
               </div>
               <a
-                href="https://drive.google.com/file/d/1DqmGl3as8uc11rZ0xBFYs18ylN-N5UrC/view?usp=sharing           "
+                href={"mailto:dsyaswanth777@gmail.com"}
                 className="underline underline-offset-2 font-extra-bold"
                 target="_blank"
               >

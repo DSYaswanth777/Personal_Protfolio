@@ -14,6 +14,9 @@ import Github from "../../public/icons/github_icon.svg";
 import { forwardRef } from "react";
 
 const Hero_Section = forwardRef((props, ref) => {
+  const handleEmailClick = () => {
+    window.location.href = "mailto:dsyaswanth777@gmail.com";
+  };
   return (
     <div className="container md:mx-auto h-full " ref={ref}>
       <div className="flex flex-col md:flex-row  justify-around items-center pt-16 section1 ">
@@ -30,14 +33,25 @@ const Hero_Section = forwardRef((props, ref) => {
               <p className="text-2xl md:text-3xl font-extra-bold pb-5">
                 A Passionate Front-End Developer
               </p>
-              <a
-                href="https://drive.google.com/file/d/1DqmGl3as8uc11rZ0xBFYs18ylN-N5UrC/view?usp=sharing"
-                target="_blank"
-              >
-                <button className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack mt-5 ">
-                  Hire Me
-                </button>
-              </a>
+              <div className="flex gap-3">
+                <a href={"mailto:dsyaswanth777@gmail.com"} target="_blank">
+                  <button
+                    className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack mt-5 "
+                    onClick={handleEmailClick}
+                  >
+                    Hire Me
+                  </button>
+                </a>
+                <a
+                  href="DSYaswanth_Resume.pdf"
+                  download="DSYaswanth_Resume.pdf"
+                  target="_blank"
+                >
+                  <button className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack mt-5 ">
+                    Resume
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -58,7 +72,6 @@ const Hero_Section = forwardRef((props, ref) => {
               className="bg-white rounded-full p-3 shadow-xl relative group zoom-effect "
             >
               <div className="flex items-center">
-                {/* <FaLinkedinIn size={20} /> */}
                 <Image src={LinkedinIn} size={12} alt="LinkedinIn"></Image>
               </div>
             </a>
@@ -68,7 +81,6 @@ const Hero_Section = forwardRef((props, ref) => {
               className="bg-white rounded-full p-3 shadow-xl relative group zoom-effect "
             >
               <div className="flex items-center">
-                {/* <FaTwitter size={20} /> */}
                 <Image src={Twitter} size={12} alt="Twitter"></Image>
               </div>
             </a>
@@ -87,6 +99,6 @@ const Hero_Section = forwardRef((props, ref) => {
     </div>
   );
 });
-Hero_Section.displayName = "Hero_Section"; 
+Hero_Section.displayName = "Hero_Section";
 
 export default Hero_Section;

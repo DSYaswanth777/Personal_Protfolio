@@ -6,9 +6,9 @@ import { HiMenuAlt3, HiX } from "react-icons/hi";
 function Header({ scrollToSection }) {
   //**State to open and close navbar menu */
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-   //**Ref to the menu container */ 
+  //**Ref to the menu container */
   const menuRef = useRef(null);
-//**Menu Toggle Function */
+  //**Menu Toggle Function */
   const toggleMenu = () => {
     setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
   };
@@ -22,6 +22,7 @@ function Header({ scrollToSection }) {
     closeMenu();
     e.preventDefault();
   };
+
   useEffect(() => {
     const handleOutsideClick = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
@@ -37,7 +38,7 @@ function Header({ scrollToSection }) {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, [isMenuOpen]);
-//**Array for navabr items */
+  //**Array for navabr items */
   const navItems = [
     { section: "hero", label: "Home" },
     { section: "skills", label: "Skills" },
@@ -50,9 +51,11 @@ function Header({ scrollToSection }) {
     <div className="container mx-auto">
       <nav className="p-5 md:flex md:items-center md:justify-around bg-white border-b-4 container md:mx-auto z-10 fixed">
         <div className="flex justify-between items-center">
-          <span className="font-extra-bold text-lg uppercase">Yaswanth</span>
+          <span href="#" className="font-extra-bold text-lg uppercase">
+            Yaswanth
+          </span>
           <span className="cursor-pointer md:hidden block" onClick={toggleMenu}>
-            {isMenuOpen ? <HiX size={25} /> : <HiMenuAlt3 size={25}/>}
+            {isMenuOpen ? <HiX size={25} /> : <HiMenuAlt3 size={25} />}
           </span>
         </div>
         <div ref={menuRef}>
