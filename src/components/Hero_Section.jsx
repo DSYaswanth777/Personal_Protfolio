@@ -12,6 +12,7 @@ import Instagram from "../../public/icons/instagram_icon.svg";
 import Github from "../../public/icons/github_icon.svg";
 //**forwardRef Import from react */
 import { forwardRef } from "react";
+import { Reveal } from "./Reveal";
 
 const Hero_Section = forwardRef((props, ref) => {
   const handleEmailClick = () => {
@@ -26,20 +27,26 @@ const Hero_Section = forwardRef((props, ref) => {
               <Lottie animationData={Animation} />
             </div>
             <div className="ml-0">
-              <p className="pb-2 text-md">Welcome to my Portfolio!</p>
-              <h1 className="text-2xl md:text-3xl pb-2 ">
-                I am Yaswanth Dasari.
-              </h1>
-              <p className="text-2xl md:text-3xl font-extra-bold pb-5">
-                A Passionate Front-End Developer
-              </p>
+              <Reveal>
+                <p className="pb-2 text-md">Welcome to my Portfolio!</p>
+              </Reveal>
+              <Reveal>
+                <h1 className="text-2xl md:text-3xl pb-2 ">
+                  I am Yaswanth Dasari.
+                </h1>
+              </Reveal>
+              <Reveal>
+                <p className="text-2xl md:text-3xl font-extra-bold pb-5">
+                  A Passionate Front-End Developer
+                </p>
+              </Reveal>
               <div className="flex gap-3">
                 <a href={"mailto:dsyaswanth777@gmail.com"} target="_blank">
                   <button
                     className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack mt-5 "
                     onClick={handleEmailClick}
                   >
-                    Hire Me
+                    Hire Me!
                   </button>
                 </a>
                 <a
