@@ -69,7 +69,7 @@ function Header({ scrollToSection }) {
                 : "md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 backdrop-blur-md "
             } md:items-center gap-10 md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 backdrop-blur-xl text-center ${
               isMenuOpen
-                ? "opacity-100 top-[71px] h-screen flex flex-col justify-center items-center"
+                ? "opacity-100 top-[71px] h-screen flex flex-col justify-center items-center gap-5"
                 : "opacity-0 top-[-400px]"
             } transition-all ease-in duration-500`}
           >
@@ -78,7 +78,7 @@ function Header({ scrollToSection }) {
               key={item.section}
               >
               <li   
-                className="my-1 text-center font-extra-bold text-xl md:my-0"
+                className="my-2 text-center font-extra-bold text-xl md:my-0"
               >
                 <a
                   href="#"
