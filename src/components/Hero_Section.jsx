@@ -95,14 +95,14 @@ const Hero_Section = forwardRef((props, ref) => {
           </div>
         </div>
         <Reveal2>
-          <div className="flex flex-row md:flex-col gap-7  cursor-pointer pt-20 section2">
+          <div className="flex flex-row md:flex-col gap-7  cursor-pointer pt-20 section2 p-1">
             {socialLinks.map((socialLink) => (
               <a
                 href={socialLink.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 key={socialLink.id}
-                className="bg-white rounded-full p-3 shadow-xl relative group zoom-effect "
+                className="bg-white rounded-full p-3 shadow-md relative group zoom-effect "
               >
                 <div className="flex items-center">
                   <Image src={socialLink.icon} size={12} alt={socialLink.alt} />
