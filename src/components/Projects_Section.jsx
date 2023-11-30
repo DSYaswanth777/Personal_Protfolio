@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { GrShare } from "react-icons/gr";
-import { Reveal2 } from "./Reveal2";
-import { Reveal } from "./Reveal";
+import { Reveal2 } from "./Animations/Reveal2";
+import { Reveal } from "./Animations/Reveal";
 
 const projects = [
   {
@@ -42,7 +42,7 @@ const ProjectCard = ({
   githubLink,
   demoLink,
 }) => (
-  <div className="bg-normalWhite p-10 rounded-xl shadow-xl flex gap-10 flex-col md:flex-col lg:flex-row justify-center items-center">
+  <article className="bg-normalWhite p-10 rounded-xl shadow-xl flex gap-10 flex-col md:flex-col lg:flex-row justify-center items-center">
     <div className="border-4 rounded-lg hover:backdrop-blur-lg cursor-pointer relative group">
       <Reveal2>
         <Image src={imageSrc} alt="Project" />
@@ -124,11 +124,11 @@ const ProjectCard = ({
         </Reveal2>
       </div>
     </div>
-  </div>
+  </article>
 );
 
 const Projects_Section = React.forwardRef((props, ref) => (
-  <div className="container md:mx-auto md:px-10 h-full " ref={ref}>
+  <section className="container md:mx-auto md:px-10 h-full " ref={ref}  aria-labelledby="projects-title">
     <div className="flex justify-around flex-col  pt-32 ">
       <div className="flex justify-center flex-col items-center">
         <Reveal>
@@ -171,7 +171,7 @@ const Projects_Section = React.forwardRef((props, ref) => (
         </a>
       </Reveal2>
     </div>
-  </div>
+  </section>
 ));
 
 Projects_Section.displayName = "Projects_Section";

@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 //**React-Icon Imports */
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-import { Reveal2 } from "./Reveal2";
+import { Reveal2 } from "./Animations/Reveal2";
 
 function Header({ scrollToSection }) {
   //**State to open and close navbar menu */
@@ -49,17 +49,17 @@ function Header({ scrollToSection }) {
   ];
 
   return (
-    <div className="container mx-auto">
+    <header className="container mx-auto">
       <nav className="p-5 md:flex md:items-center md:justify-around bg-white border-b-4 container md:mx-auto z-10 fixed">
         <div className="flex justify-between items-center">
           <Reveal2>
-            <span href="#" className="font-extra-bold text-lg uppercase">
+            <h1 href="#" className="font-extra-bold text-lg uppercase">
               Yaswanth
-            </span>
+            </h1>
           </Reveal2>
-          <span className="cursor-pointer md:hidden block" onClick={toggleMenu}>
+          <button button aria-label="Toggle Menu"  className="cursor-pointer md:hidden block" onClick={toggleMenu}>
             {isMenuOpen ? <HiX size={25} /> : <HiMenuAlt3 size={25} />}
-          </span>
+          </button>
         </div>
         <div ref={menuRef}>
           <ul
@@ -93,7 +93,7 @@ function Header({ scrollToSection }) {
           </ul>
         </div>
       </nav>
-    </div>
+    </header>
   );
 }
 

@@ -12,8 +12,8 @@ import Instagram from "../../public/icons/instagram_icon.svg";
 import Github from "../../public/icons/github_icon.svg";
 //**forwardRef Import from react */
 import { forwardRef } from "react";
-import { Reveal } from "./Reveal";
-import { Reveal2 } from "./Reveal2";
+import { Reveal } from "./Animations/Reveal";
+import { Reveal2 } from "./Animations/Reveal2";
 
 const Hero_Section = forwardRef((props, ref) => {
   const handleEmailClick = () => {
@@ -47,24 +47,24 @@ const Hero_Section = forwardRef((props, ref) => {
   ];
 
   return (
-    <div className="container md:mx-auto h-full " ref={ref}>
+    <section className="container md:mx-auto h-full " ref={ref} aria-label="Hero Section">
       <div className="flex flex-col md:flex-row  justify-around items-center pt-16 section1 ">
         <div className="mt-10">
           <div className="ml-10 mt-10">
             <div className="w-2/3">
-              <Lottie animationData={Animation} />
+              <Lottie animationData={Animation} aria-hidden="true"  />
             </div>
-            <div className="ml-0">
+            <article className="ml-0">
               <Reveal>
                 <p className="pb-2 text-md">Welcome to my Portfolio!</p>
               </Reveal>
               <Reveal>
-                <h1 className="text-2xl md:text-3xl pb-2 ">
+                <h1 className="text-2xl md:text-2xl pb-2 ">
                   I am Yaswanth Dasari.
                 </h1>
               </Reveal>
               <Reveal>
-                <p className="text-2xl md:text-3xl font-extra-bold pb-5">
+                <p className="text-2xl md:text-2xl font-extra-bold pb-5">
                   A Passionate Front-End Developer
                 </p>
               </Reveal>
@@ -72,7 +72,7 @@ const Hero_Section = forwardRef((props, ref) => {
                 <a href={"mailto:dsyaswanth777@gmail.com"} target="_blank">
                   <Reveal2>
                     <button
-                      className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack mt-5 "
+                      className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack mt-5 hover:border-dark border "
                       onClick={handleEmailClick}
                     >
                       Hire Me!
@@ -85,23 +85,24 @@ const Hero_Section = forwardRef((props, ref) => {
                   target="_blank"
                 >
                   <Reveal2>
-                    <button className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack mt-5 ">
+                    <button className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack hover:border-dark border mt-5 ">
                       Resume
                     </button>
                   </Reveal2>
                 </a>
               </div>
-            </div>
+            </article>
           </div>
         </div>
         <Reveal2>
-          <div className="flex flex-row md:flex-col gap-7  cursor-pointer pt-20 section2 p-1">
+          <aside className="flex flex-row md:flex-col gap-7  cursor-pointer pt-20 section2 p-1">
             {socialLinks.map((socialLink) => (
               <a
                 href={socialLink.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 key={socialLink.id}
+                aria-label={`Follow on ${socialLink.alt}`}
                 className="bg-white rounded-full p-3 shadow-md relative group zoom-effect "
               >
                 <div className="flex items-center">
@@ -109,10 +110,10 @@ const Hero_Section = forwardRef((props, ref) => {
                 </div>
               </a>
             ))}
-          </div>
+          </aside>
         </Reveal2>
       </div>
-    </div>
+    </section>
   );
 });
 Hero_Section.displayName = "Hero_Section";

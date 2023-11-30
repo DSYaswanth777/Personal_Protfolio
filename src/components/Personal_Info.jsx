@@ -1,9 +1,9 @@
 import React, { forwardRef } from "react";
-import { Reveal } from "./Reveal";
-import { Reveal2 } from "./Reveal2";
+import { Reveal } from "./Animations/Reveal";
+import { Reveal2 } from "./Animations/Reveal2";
 const Personal_Info = forwardRef((props, ref) => {
   return (
-    <div className="container md:mx-auto h-full pt-36" ref={ref}>
+    <section className="container md:mx-auto h-full pt-36" ref={ref} aria-labelledby="about-me-title">
       <div className="flex justify-around flex-col items-center">
         <div className="text-center">
           <Reveal>
@@ -22,9 +22,12 @@ const Personal_Info = forwardRef((props, ref) => {
             <div className="step-dot"></div>
             <div className="step-line"></div>
             <Reveal>
+              <article>
+
               <h2 className="text-2xl text-center font-extra-bold underline underline-offset-4">
                 Experience
               </h2>
+              </article>
             </Reveal>
             <div className="py-4">
               <Reveal>
@@ -65,9 +68,12 @@ const Personal_Info = forwardRef((props, ref) => {
             <div className="step-dot"></div>
             <div className="step-line"></div>
             <Reveal>
+              <article>
+
               <h2 className="text-2xl  text-center font-extra-bold underline underline-offset-4">
                 Education
               </h2>
+              </article>
             </Reveal>
             <div className="py-4">
               <Reveal>
@@ -102,7 +108,7 @@ const Personal_Info = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 });
 Personal_Info.displayName = "Personal_Info";

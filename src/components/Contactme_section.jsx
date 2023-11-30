@@ -3,8 +3,8 @@
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { BiPhone } from "react-icons/bi";
 import { forwardRef } from "react";
-import { Reveal } from "./Reveal";
-import { Reveal2 } from "./Reveal2";
+import { Reveal } from "./Animations/Reveal";
+import { Reveal2 } from "./Animations/Reveal2";
 
 const contactme_Section = forwardRef((props, ref) => {
   const handleEmailClick = () => {
@@ -15,7 +15,7 @@ const contactme_Section = forwardRef((props, ref) => {
   };
 
   return (
-    <div className="h-full pt-32 container md:mx-auto mb-20 flex flex-col justify-center items-center gap-10" ref={ref}>
+    <section className="h-full pt-32 container md:mx-auto mb-20 flex flex-col justify-center items-center gap-10" ref={ref}  aria-labelledby="contact-me-title">
       <Reveal>
 
       <div className="text-3xl font-extra-bold text-center underline underline-offset-4">
@@ -71,7 +71,7 @@ const contactme_Section = forwardRef((props, ref) => {
           </Reveal2>
         </div>
       </div>
-    </div>
+    </section>
   );
 });
 contactme_Section.displayName = "ContactMeSection";

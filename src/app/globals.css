@@ -6,7 +6,7 @@
 /* Define custom font */
 @font-face {
   font-family: myFirstFont;
-  src: url("../../public/fonts/RocaOne-Rg.ttf");
+  src: url("../../public/RocaOne-Rg.ttf");
 }
 :root {
   --customBlack: #1f1f29;
@@ -144,7 +144,3 @@ label {
   transform: translateY(0);
 }
 
-.hero-section {
-  /* Additional styling specific to the Hero section */
-  /* ... */
-}

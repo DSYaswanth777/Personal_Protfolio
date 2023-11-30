@@ -62,8 +62,6 @@ export default function Home() {
       <Personal_Info ref={personalRef} />
       <Projects_Section ref={projectsRef} />
       <Contactme_Section ref={contactRef} />
-
-      {/* Render the Footer component */}
       <Footer />
     </div>
   );

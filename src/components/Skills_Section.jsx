@@ -1,8 +1,8 @@
 "use client";
 //**Importing forwardRef from react */
 import { forwardRef } from "react";
-import { Reveal } from "./Reveal";
-import { Reveal2 } from "./Reveal2";
+import { Reveal } from "./Animations/Reveal";
+import { Reveal2 } from "./Animations/Reveal2";
 const Skills_Section = forwardRef((props, ref) => {
   const skills = [
     "HTML",
