@@ -1,5 +1,6 @@
 // Import global styles for consistent styling across the application
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 
 // Metadata for the website
 export const metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         {children}
+        <Analytics />
       </body>
     </html>
   );
