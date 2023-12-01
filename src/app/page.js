@@ -1,12 +1,12 @@
 // Import necessary components and modules
 "use client";
-import Header from "../components/header";
-import Hero_Section from "../components/hero_Section";
-import Personal_Info from "../components/personal_Info";
-import Projects_Section from "../components/projects_Section";
-import Skills_Section from "../components/skills_Section";
-import Contactme_Section from "../components/contactme_section";
-import Footer from "../components/footer";
+import Header from "../components/Header";
+import Hero_Section from "../components/Hero_Section";
+import Personal_Info from "../components/Personal_Info";
+import Projects_Section from "../components/Projects_Section";
+import Skills_Section from "../components/Skills_Section";
+import Contactme_Section from "../components/Contactme_section";
+import Footer from "../components/Footer";
 import { useRef } from "react";
 import "./globals.css"
 // Define the main Home component
