@@ -5,46 +5,17 @@ import Animation from "../../public/icons/Hello-Lottie.json";
 import Lottie from "lottie-react";
 //**Nextjs image import */
 import Image from "next/image";
-//**Social media icon svg import */
-import LinkedinIn from "../../public/icons/linkedin_icon.svg";
-import Twitter from "../../public/icons/twitter_icon.svg";
-import Instagram from "../../public/icons/instagram_icon.svg";
-import Github from "../../public/icons/github_icon.svg";
 //**forwardRef Import from react */
 import { forwardRef } from "react";
 import { Reveal } from "./Animations/Reveal";
 import { Reveal2 } from "./Animations/Reveal2";
+import { socialLinks } from "@/constants/socialLinks";
 
 const Hero_Section = forwardRef((props, ref) => {
   const handleEmailClick = () => {
     window.location.href = "mailto:dsyaswanth777@gmail.com";
   };
-  const socialLinks = [
-    {
-      id: 1,
-      link: "https://github.com/DSYaswanth777",
-      icon: Github,
-      alt: "Github",
-    },
-    {
-      id: 2,
-      link: "https://www.linkedin.com/in/dasari-srinivasa-yaswanth-7a752619b/",
-      icon: LinkedinIn,
-      alt: "LinkedIn",
-    },
-    {
-      id: 3,
-      link: "https://twitter.com/dsyaswanth",
-      icon: Twitter,
-      alt: "Twitter",
-    },
-    {
-      id: 4,
-      link: "https://www.instagram.com/dasari_yaswanthh/",
-      icon: Instagram,
-      alt: "Instagram",
-    },
-  ];
+
 
   return (
     <section className="container md:mx-auto h-full " ref={ref} aria-label="Hero Section">

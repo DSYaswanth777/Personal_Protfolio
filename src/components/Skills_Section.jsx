@@ -16,7 +16,6 @@ const Skills_Section = forwardRef((props, ref) => {
     "Next.Js",
     "Github",
     "Python",
-    "C++",
   ];
   return (
     <div className="h-full container md:mx-auto px-12 pt-32" ref={ref}>

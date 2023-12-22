@@ -1,23 +1,23 @@
-//**React Imports */
 import React, { useEffect, useRef, useState } from "react";
-//**React-Icon Imports */
-import { HiMenuAlt3, HiX } from "react-icons/hi";
-import { Reveal2 } from "./Animations/Reveal2";
+import { navItems } from "@/constants/navItems";
+import HeaderLogo from "./HeaderLogo";
+import MobileMenuToggle from "./MobileMenuToggle";
+import NavItem from "./NavItem";
 
+
+// Header component
 function Header({ scrollToSection }) {
-  //**State to open and close navbar menu */
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  //**Ref to the menu container */
   const menuRef = useRef(null);
-  //**Menu Toggle Function */
+
   const toggleMenu = () => {
     setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
   };
-  //**Menu close Function */
+
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
-  //**Function scroll specific section based on navbar menu item click */
+
   const handleScrollTo = (section, e) => {
     scrollToSection(section);
     closeMenu();
@@ -39,27 +39,13 @@ function Header({ scrollToSection }) {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, [isMenuOpen]);
-  //**Array for navabr items */
-  const navItems = [
-    { section: "hero", label: "Home" },
-    { section: "skills", label: "Skills" },
-    { section: "personal", label: "About Me" },
-    { section: "projects", label: "Works" },
-    { section: "contact", label: "Contact" },
-  ];
 
   return (
     <header className="container mx-auto">
       <nav className="p-5 md:flex md:items-center md:justify-around bg-white border-b-4 container md:mx-auto z-10 fixed">
         <div className="flex justify-between items-center">
-          <Reveal2>
-            <h1 href="#" className="font-extra-bold text-lg uppercase">
-              Yaswanth
-            </h1>
-          </Reveal2>
-          <button button aria-label="Toggle Menu"  className="cursor-pointer md:hidden block" onClick={toggleMenu}>
-            {isMenuOpen ? <HiX size={25} /> : <HiMenuAlt3 size={25} />}
-          </button>
+          <HeaderLogo onClick={(e) => handleScrollTo("hero", e)} />
+          <MobileMenuToggle onClick={toggleMenu} isMenuOpen={isMenuOpen} />
         </div>
         <div ref={menuRef}>
           <ul
@@ -74,21 +60,7 @@ function Header({ scrollToSection }) {
             } transition-all ease-in duration-500`}
           >
             {navItems.map((item) => (
-              <Reveal2
-              key={item.section}
-              >
-              <li   
-                className="my-8 text-center font-extra-bold text-xl md:my-0"
-              >
-                <a
-                  href="#"
-                  className="text-md nav-link nav-link-ltr"
-                  onClick={(e) => handleScrollTo(item.section, e)}
-                >
-                  {item.label}
-                </a>
-              </li>
-              </Reveal2>
+              <NavItem key={item.section} item={item} onClick={handleScrollTo} />
             ))}
           </ul>
         </div>

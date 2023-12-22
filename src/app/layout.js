@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Yaswanth&apos;s Portfolio</title> {/* Updated title tag */}
+        <title>Yaswanth&apos;s Portfolio</title>
         <meta name="description" content="Explore Yaswanth's creative journey and accomplishments through a dynamic portfolio showcasing web development projects, skills, and experiences." />
         <meta name="keywords" content="Web Development, Portfolio, Projects, Skills, Yaswanth" />
         <meta name="author" content="Yaswanth" />
