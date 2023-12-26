@@ -10,6 +10,7 @@ import Contactme_Section from "../components/Contactme_section";
 import Footer from "../components/Footer";
 import "./globals.css";
 import useScrollToSection from "@/components/customHooks/useScrollToSection";
+import Resume from "@/components/Resume";
 
 export default function Home() {
   // Refs for each section
@@ -19,6 +20,7 @@ export default function Home() {
     personal: useRef(null),
     projects: useRef(null),
     contact: useRef(null),
+    resume:useRef(null)
   };
 
   // Custom hook to handle scrolling
@@ -32,6 +34,7 @@ export default function Home() {
       <Skills_Section ref={sectionRefs.skills} />
       <Personal_Info ref={sectionRefs.personal} />
       <Projects_Section ref={sectionRefs.projects} />
+      {/* <Resume ref={sectionRefs.resume} /> */}
       <Contactme_Section ref={sectionRefs.contact} />
       <Footer />
     </div>

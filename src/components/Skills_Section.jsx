@@ -3,20 +3,10 @@
 import { forwardRef } from "react";
 import { Reveal } from "./Animations/Reveal";
 import { Reveal2 } from "./Animations/Reveal2";
+import { skills } from "@/constants/skills";
+import SkillItem from "./SkillItem";
 const Skills_Section = forwardRef((props, ref) => {
-  const skills = [
-    "HTML",
-    "CSS",
-    "Javascript",
-    "Bootstrap",
-    "Sass",
-    "tailwind CSS",
-    "Git",
-    "React.Js",
-    "Next.Js",
-    "Github",
-    "Python",
-  ];
+
   return (
     <div className="h-full container md:mx-auto px-12 pt-32" ref={ref}>
       <div className="flex justify-center items-center flex-row gap-6 md:mx-auto ">
@@ -42,11 +32,11 @@ const Skills_Section = forwardRef((props, ref) => {
             <Reveal2>
               <div className="skills-section  pt-10">
                 {skills.map((skill, index) => (
-                  <>
-                    <p key={index} className="p-3 bg-customBlack">
+                  
+                    <p key={skill} className="p-3 bg-customBlack">
                       {skill}
                     </p>
-                  </>
+                  
                 ))}
               </div>
             </Reveal2>
@@ -62,7 +52,7 @@ const Skills_Section = forwardRef((props, ref) => {
           </Reveal>
           <Reveal>
             <p className="pt-2 text-lg pb-4 text-center">
-              List of things I’m learning, thought I’d share this.
+              List of things I&apos;m learning, thought I&apos;d share this.
             </p>
           </Reveal>
 
@@ -79,16 +69,7 @@ const Skills_Section = forwardRef((props, ref) => {
   );
 });
 
-const SkillItem = ({ title, status }) => (
-  <div className="flex justify-between items-center">
-    <Reveal2>
-      <div className="text-xl pt-2 pb-2">{title}</div>
-    </Reveal2>
-    <Reveal>
-      <div className="bg-customBlack p-1 rounded text-white">{status}</div>
-    </Reveal>
-  </div>
-);
+
 Skills_Section.displayName = "Skills_Section";
 
 export default Skills_Section;

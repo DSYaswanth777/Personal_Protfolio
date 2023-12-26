@@ -33,6 +33,7 @@ const Projects_Section = React.forwardRef((props, ref) => (
             key={project.id}
             imageSrc={project.imageSrc}
             title={project.title}
+            techStack={project.techStack}
             description={project.description}
             githubLink={project.githubLink}
             demoLink={project.demoLink}
