@@ -10,7 +10,6 @@ import Contactme_Section from "../components/Contactme_section"
 import Footer from "../components/Footer";
 import "./globals.css";
 import useScrollToSection from "@/components/customHooks/useScrollToSection";
-import Resume from "@/components/Resume";
 
 export default function Home() {
   // Refs for each section
