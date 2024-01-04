@@ -26,14 +26,13 @@ const Projects_Section = React.forwardRef((props, ref) => (
         </Reveal2>
       </div>
     </div>
-    <div className="pt-16 mt-3 px-5 flex flex-col gap-10 ">
+    <div className="pt-8 px-5 flex  gap-10">
       <Reveal2>
         {projects.map((project) => (
           <ProjectCard
             key={project.id}
             imageSrc={project.imageSrc}
             title={project.title}
-            techStack={project.techStack}
             description={project.description}
             githubLink={project.githubLink}
             demoLink={project.demoLink}
