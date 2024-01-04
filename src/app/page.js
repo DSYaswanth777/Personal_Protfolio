@@ -9,7 +9,7 @@ import Skills_Section from "../components/Skills_Section";
 import Contactme_Section from "../components/Contactme_section"
 import "./globals.css";
 import useScrollToSection from "@/components/customHooks/useScrollToSection";
-import Footer from "../components/Footer";
+import Footer from "../components/footer";
  
 export default function Home() {
   // Refs for each section

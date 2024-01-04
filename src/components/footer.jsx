@@ -4,7 +4,7 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 import { Reveal2 } from "./Animations/Reveal2";
 import SocialLink from "./SocialLink";
 
-function Footer() {
+function footer() {
   return (
     <footer className="bg-customBlack">
       <div className="container md:mx-auto flex justify-between items-center h-full py-16 gap-8 flex-col px-6">
@@ -39,4 +39,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default footer;
