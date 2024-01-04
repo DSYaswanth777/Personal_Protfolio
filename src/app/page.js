@@ -7,10 +7,10 @@ import Personal_Info from "../components/Personal_Info";
 import Projects_Section from "../components/Projects_Section";
 import Skills_Section from "../components/Skills_Section";
 import Contactme_Section from "../components/Contactme_section"
-import Footer from "../components/Footer";
 import "./globals.css";
 import useScrollToSection from "@/components/customHooks/useScrollToSection";
-
+import Footer from "../components/Footer";
+ 
 export default function Home() {
   // Refs for each section
   const sectionRefs = {
