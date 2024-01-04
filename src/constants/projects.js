@@ -11,11 +11,11 @@ export const projects = [
     {
       id: 2,
       imageSrc: require("../../public/images/project2.png"),
-      title: "Budget manager",
+      title: "Sai Sanjeevani Yoga",
       description:
         "Experience the convenience of seamless budgeting and expense tracking with my Budget Manager project. Developed using React and Bootstrap, this intuitive web application empowers users to create budgets, log expenses, and visualize their financial journey with ease.  ",
-      githubLink: "https://github.com/DSYaswanth777/Budget-Manger",
-      demoLink: "https://budget-manger.vercel.app/",
+      githubLink: "https://github.com/DSYaswanth777",
+      demoLink: "https://www.saisanjeevaniyoga.in/",
     },
     {
       id: 3,
