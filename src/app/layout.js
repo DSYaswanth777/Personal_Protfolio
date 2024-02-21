@@ -1,4 +1,3 @@
-// Import global styles for consistent styling across the application
 import Script from "next/script";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
