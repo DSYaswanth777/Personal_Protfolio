@@ -1,4 +1,5 @@
 // Import global styles for consistent styling across the application
+import Script from "next/script";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
 
@@ -15,6 +16,20 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <title>Yaswanth&apos;s Portfolio</title>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-E7NY2W59JZ"
+        />
+
+        <Script id="google-analytics">
+          {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', ${'${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}'});
+          `}
+        </Script>
+
         <meta name="description" content="Explore Yaswanth's creative journey and accomplishments through a dynamic portfolio showcasing web development projects, skills, and experiences." />
         <meta name="keywords" content="Web Development, Portfolio, Projects, Skills, Yaswanth" />
         <meta name="author" content="Yaswanth" />
