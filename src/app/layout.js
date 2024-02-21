@@ -2,7 +2,7 @@
 import Script from "next/script";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 // Metadata for the website
 export const metadata = {
   title: "Yaswanth's Portfolio",
@@ -49,6 +49,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         {children}
+        <SpeedInsights/>
         <Analytics />
       </body>
     </html>
