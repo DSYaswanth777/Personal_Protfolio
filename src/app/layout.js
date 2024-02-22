@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <title>Yaswanth&apos;s Portfolio</title>
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-E7NY2W59JZ"
+          src="https://www.googletagmanager.com/gtag/js?id=G-WCSYF90S0M"
         />
 
         <Script id="google-analytics">
