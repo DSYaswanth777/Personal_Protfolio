@@ -10,7 +10,7 @@ const Projects_Section = React.forwardRef((props, ref) => {
       ref={ref}
       aria-labelledby="projects-title"
     >
-      <div className="flex justify-around flex-col pt-32">
+      <div className="flex justify-around flex-col pt-12">
         <div className="flex justify-center flex-col items-center">
           <Reveal2>
             <p className="font-extra-bold text-3xl underline underline-offset-4 text-center flex justify-center items-center">
@@ -19,14 +19,14 @@ const Projects_Section = React.forwardRef((props, ref) => {
           </Reveal2>
           <div className="pb-5"></div>
           <Reveal2>
-            <p className="text-xl text-center">
+            <p className="text-xl text-center px-3">
               Showcasing my diverse range of projects and creations in the world
               of technology.
             </p>
           </Reveal2>
         </div>
       </div>
-      <div className="pt-8 px-5">
+      <div className=" container">
         <div className="image-gallery"></div>
         {projects.map((project) => (
           <ProjectCard

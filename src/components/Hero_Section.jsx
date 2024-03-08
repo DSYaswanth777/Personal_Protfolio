@@ -18,7 +18,7 @@ const Hero_Section = forwardRef((props, ref) => {
 
 
   return (
-    <section className="container md:mx-auto h-full " ref={ref} aria-label="Hero Section">
+    <section className="container md:mx-auto h-full  " ref={ref} aria-label="Hero Section">
       <div className="flex flex-col md:flex-row  justify-around items-center pt-16 section1 ">
         <div className="mt-10">
           <div className="ml-10 mt-10">

@@ -29,7 +29,7 @@ const Skills_Section = forwardRef((props, ref) => {
               </h1>
             </Reveal>
             <Reveal2>
-              <div className="skills-section  pt-10">
+              <div className="skills-section  pt-10 px-5">
                 {skills.map((skill, index) => (
                   
                     <p key={skill} className="p-3 bg-customBlack">

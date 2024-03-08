@@ -10,7 +10,7 @@ function footer() {
       <div className="container md:mx-auto flex justify-between items-center h-full py-16 gap-8 flex-col px-6">
         <Reveal2>
           <p className="text-white font-extra-bold">
-            &copy; 2023. Yaswanth Dasari
+            &copy; 2024. Yaswanth Dasari
           </p>
         </Reveal2>
         <Reveal2>

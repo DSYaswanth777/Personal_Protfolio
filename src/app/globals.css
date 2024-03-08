@@ -86,7 +86,7 @@ body {
 /* Skills section styling */
 .skills-section {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto ;
   gap: 20px;
   justify-content: center;
   align-items: center;
@@ -95,7 +95,7 @@ body {
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .skills-section {
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto ;
   }
 }
 
