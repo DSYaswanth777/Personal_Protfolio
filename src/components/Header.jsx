@@ -42,7 +42,7 @@ function Header({ scrollToSection }) {
 
   return (
     <header className="container mx-auto">
-      <nav className="p-5 md:flex md:items-center md:justify-around bg-white border-b-4 container md:mx-auto z-10 fixed">
+      <nav className="p-3 md:flex md:items-center md:justify-around bg-white border-b-4 container md:mx-auto z-10 fixed">
         <div className="flex justify-between items-center">
           <HeaderLogo onClick={(e) => handleScrollTo("hero", e)} />
           <MobileMenuToggle onClick={toggleMenu} isMenuOpen={isMenuOpen} />

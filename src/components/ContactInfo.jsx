@@ -5,7 +5,7 @@ const ContactInfo = ({ icon, label, value, onClick }) => (
     <div className="flex flex-col justify-center items-center">
       <Reveal2>
         <div
-          className="p-5 shadow-lg rounded-full border-2 flex zoom-effect cursor-pointer"
+          className="p-5 rounded-full border-2 flex cursor-pointer"
           onClick={onClick}
         >
           {icon}

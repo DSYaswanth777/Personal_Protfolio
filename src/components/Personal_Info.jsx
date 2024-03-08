@@ -84,10 +84,7 @@ const Personal_Info = forwardRef((props, ref) => {
                 </div>
               </Reveal>
               <Reveal2>
-                <p>Parul Institute of Engineering & Technology</p>
-              </Reveal2>
-              <Reveal2>
-                <p>CGPA: 7.56/10.0</p>
+                <p className="text-lg font-bold">Parul University</p>
               </Reveal2>
             </div>
             <div className="relative">
@@ -101,10 +98,7 @@ const Personal_Info = forwardRef((props, ref) => {
                 </Reveal>
               </Reveal2>
               <Reveal2>
-                <p>Narayana Junior college</p>
-              </Reveal2>
-              <Reveal2>
-                <p>CGPA: 8.17/10.0</p>
+                <p className="text-lg font-bold">Narayana Junior college</p>
               </Reveal2>
             </div>
           </div>

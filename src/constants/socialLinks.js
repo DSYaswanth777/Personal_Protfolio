@@ -18,12 +18,6 @@ export const socialLinks = [
       alt: "LinkedIn",
     },
     {
-      id: 3,
-      link: "https://twitter.com/dsyaswanth",
-      icon: Twitter,
-      alt: "Twitter",
-    },
-    {
       id: 4,
       link: "https://www.instagram.com/dasari_yaswanthh/",
       icon: Instagram,

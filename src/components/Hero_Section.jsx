@@ -27,16 +27,16 @@ const Hero_Section = forwardRef((props, ref) => {
             </div>
             <article className="ml-0">
               <Reveal>
-                <p className="pb-2 text-md">Welcome to my Portfolio!</p>
+                <p className="pb-4 text-xl">Welcome to my Portfolio!</p>
               </Reveal>
               <Reveal>
-                <h1 className="text-2xl md:text-2xl pb-2 ">
+                <h1 className="text-2xl md:text-2xl pb-5 ">
                   I am Yaswanth Dasari.
                 </h1>
               </Reveal>
               <Reveal>
-                <p className="text-2xl md:text-2xl font-extra-bold pb-5">
-                  A Passionate Front-End Developer
+                <p className="text-2xl md:text-2xl font-extra-bold pb-4">
+                  Passionate  Web Developer
                 </p>
               </Reveal>
               <div className="flex gap-3">

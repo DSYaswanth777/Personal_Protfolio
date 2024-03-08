@@ -1,5 +1,4 @@
 "use client";
-//**Importing forwardRef from react */
 import { forwardRef } from "react";
 import { Reveal } from "./Animations/Reveal";
 import { Reveal2 } from "./Animations/Reveal2";

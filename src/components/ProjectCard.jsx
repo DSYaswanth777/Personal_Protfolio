@@ -3,24 +3,25 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { GrShare } from "react-icons/gr";
 import { Reveal2 } from "./Animations/Reveal2";
-import { Reveal } from "./Animations/Reveal";
+
 const ProjectCard = ({
   imageSrc,
   title,
   description,
   githubLink,
+  techStack,
   demoLink,
 }) => (
-  <article className="bg-normalWhite lg:p-20 p-5  my-12 rounded-xl   flex gap-10 flex-col justify-center items-center">
-    <div className="border-4 rounded-lg hover:backdrop-blur-lg cursor-pointer relative group">
+  <article className="project-card lg:p-5 p-5 my-12 rounded-xl flex gap-10 flex-col justify-center items-center">
+    <div className="border-4 rounded-lg cursor-pointer relative group">
       <Reveal2>
         <Image src={imageSrc} alt="Project" />
       </Reveal2>
-      <div className="absolute inset-0 flex flex-col items-center justify-center group-hover:backdrop-blur-lg transition-all duration-300 opacity-0 gap-5 group-hover:opacity-100">
-              
-        <div className="text-center">
-          <div className="flex gap-5 cursor-pointer">
-            <div className="flex gap-2">
+      <div className="content bg-normalWhite p-5 shadow-2xl">
+        <div className="text-left">
+          <div className="flex gap-5  justify-center items-center cursor-pointer">
+            <h1 className="text-xl font-extra-bold uppercase">{title}</h1>
+            {/* <div className="flex gap-2">
               <a
                 href={githubLink}
                 target="_blank"
@@ -30,7 +31,7 @@ const ProjectCard = ({
                 Code
               </a>
               <FaGithub size={25} />
-            </div>
+            </div> */}
             <div className="flex gap-2">
               <a
                 href={demoLink}
@@ -42,11 +43,11 @@ const ProjectCard = ({
               </a>
               <GrShare size={20} />
             </div>
+            <p className="text-xl"> <span className="font-extra-bold">Tech Stack: </span>&nbsp; {techStack.join(", ")}</p>
           </div>
         </div>
       </div>
     </div>
-    
   </article>
 );
 

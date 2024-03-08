@@ -2,6 +2,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.image-gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+}
+
+.hexagon {
+  width: 100px;
+  height: 150px;
+}
+
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+  background-color: inherit;
+  transform: skewY(30deg);
+}
+
+.hexagon img {
+  transform: skewY(-30deg);
+}
+
+.pentagon {
+  width: 150px;
+  height: 150px;
+}
+
+.pentagon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 130px solid inherit;
+}
 
 /* Define custom font */
 @font-face {
@@ -88,9 +152,13 @@ body {
 /* Zoom effect on hover */
 .zoom-effect:hover {
   transform: scale(1.2);
+  border-radius: 50%;
   transition: transform 0.8s ease-in-out;
 }
-
+.zoom-effect {
+  border-radius: 50%;
+  transition: transform 0.8s ease-in-out;
+}
 /* Input and textarea styles */
 input,
 textarea {
@@ -143,3 +211,4 @@ label {
   opacity: 1;
   transform: translateY(0);
 }
+
