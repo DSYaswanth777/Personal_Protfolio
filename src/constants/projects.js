@@ -5,8 +5,8 @@ export const projects = [
     title: "Amma The Handmade Spices",
     description:
       "   I combined Bootstrap and React custom hooks to craft an efficient application, showcasing impactful cart features and skillful state  management for a seamless user experience. Used React  custom hooks for efficient state management and easy flow of code.",
-    githubLink: "https://ammathehandmadespices.vercel.app/",
-    demoLink: "https://ammathehandmadespices.vercel.app//",
+    githubLink: "https://www.ammahandmadespices.com/",
+    demoLink: "https://www.ammahandmadespices.com/",
     techStack: ["React", "ReactStrap"],
   },
 
