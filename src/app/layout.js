@@ -13,15 +13,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Yaswanth&apos;s Portfolio</title>
-
+        <title>
+          Yaswanth&apos;s Portfolio: Inspiring Projects and Professional
+          Achievements Revealed
+        </title>
         <meta
           name="description"
           content="Explore Yaswanth's creative journey and accomplishments through a dynamic portfolio showcasing web development projects, skills, and experiences."
         />
         <meta
           name="keywords"
-          content="Web Development, Portfolio, Projects, Skills, Yaswanth"
+          content="Web Development, Portfolio, Projects, Skills, Yaswanth, Yaswanth Dasari, yaswanthdasari"
         />
         <meta name="author" content="Yaswanth" />
         <link rel="icon" href="./favicon.ico" />
@@ -34,10 +36,12 @@ export default function RootLayout({ children }) {
         />
         <meta property="og:image" content="../../public/images/og_card.png" />
         <meta property="og:type" content="website" />
-
+        <link rel="canonical" href="https://www.yaswanthdasari.in/" />
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Yaswanth's Portfolio" />
+        <meta name="publisher" content="Yaswanth Dasari"/>
+        <meta name="robots" content="index, follow" />
         <meta
           name="twitter:description"
           content="Explore Yaswanth's creative journey and accomplishments."
@@ -50,9 +54,9 @@ export default function RootLayout({ children }) {
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
         ></script>
-   <script
-  dangerouslySetInnerHTML={{
-    __html: `  
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `  
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -61,9 +65,8 @@ export default function RootLayout({ children }) {
         page_path:window.location.pathname,
       });
     `,
-  }}
-/>
-
+          }}
+        />
       </head>
       <body>
         {children}
