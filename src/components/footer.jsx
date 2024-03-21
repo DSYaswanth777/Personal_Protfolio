@@ -20,16 +20,19 @@ function footer() {
                 href="https://github.com/DSYaswanth777"
                 icon={FaGithub}
                 size={20}
+                label="GitHub" 
               />
               <SocialLink
                 href="https://www.linkedin.com/in/dasari-srinivasa-yaswanth-7a752619b/"
                 icon={FaLinkedinIn}
                 size={20}
+                label="LinkedIn"
               />
               <SocialLink
                 href="mailto:dsyaswanth777@gmail.com"
                 icon={HiOutlineMailOpen}
                 size={20}
+                label="Email" 
               />
             </div>
           </nav>

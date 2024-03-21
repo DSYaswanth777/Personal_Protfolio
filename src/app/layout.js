@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="keywords"
-          content="Web Development, Portfolio, Projects, Skills, Yaswanth, Yaswanth Dasari, yaswanthdasari"
+          content="Web Development, Portfolio, Projects, Skills, Yaswanth, Yaswanth Dasari, yaswanthdasari, HTML, CSS, JavaScript, React, Frontend Development"
         />
         <meta name="author" content="Yaswanth" />
         <link rel="icon" href="./favicon.ico" />

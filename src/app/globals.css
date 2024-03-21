@@ -70,6 +70,7 @@ textarea {
 @font-face {
   font-family: myFirstFont;
   src: url("../../public/RocaOne-Rg.ttf");
+  font-display: swap;
 }
 :root {
   --customBlack: #1f1f29;
