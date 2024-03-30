@@ -19,7 +19,7 @@ const Skills_Section = forwardRef((props, ref) => {
           <div className="flex  justify-center items-center w-100">
               <div className="skills-section justify-center items-center d-flex  pt-5 px">
                 {skills.map((skill, index) => (
-                  <div className="d-flex justify-center items-center">
+                  <div className="d-flex justify-center items-center" key={index}>
                     <Reveal2>
                     <p
                       key={skill}
