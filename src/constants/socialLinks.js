@@ -1,7 +1,6 @@
 
 //**Social media icon svg import */
 import LinkedinIn from "../../public/icons/linkedin_icon.svg";
-import Twitter from "../../public/icons/twitter_icon.svg";
 import Instagram from "../../public/icons/instagram_icon.svg";
 import Github from "../../public/icons/github_icon.svg";
 export const socialLinks = [

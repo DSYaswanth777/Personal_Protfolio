@@ -52,7 +52,7 @@ const Personal_Info = forwardRef((props, ref) => {
               <div className="pt-12"></div>
               <Reveal>
                 <div className="text-xl font-extra-bold">
-                  Looking for new position !
+                  Freelance Web Developer
                 </div>
               </Reveal>
               <Reveal2>
@@ -61,7 +61,7 @@ const Personal_Info = forwardRef((props, ref) => {
                   className="underline underline-offset-2 font-extra-bold"
                   target="_blank"
                 >
-                  Hire me
+                  Hire / Contact Me
                 </a>
               </Reveal2>
             </div>

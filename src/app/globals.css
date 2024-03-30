@@ -1,14 +1,10 @@
-.circle,
-.pentagon,
-.square {
-  width: 150px;
-  height: 150px;
-}
 body,
 input,
 textarea {
   background-color: #f9f4f4;
 }
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -49,11 +45,7 @@ textarea {
   background-color: inherit;
   transform: skewY(30deg);
 }
-.skills-section :hover,
-.skills-section :nth-child(2n) {
-  background-color: #000;
-  color: #f9f4f4;
-}
+
 .hexagon img {
   transform: skewY(-30deg);
 }
@@ -81,8 +73,9 @@ body {
 }
 .skills-section {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
   gap: 20px;
+  text-align: center;
   justify-content: center;
   align-items: center;
   transition: 0.4s ease-in-out;
@@ -98,18 +91,14 @@ body {
   }
 }
 .skills-section p {
-  background-color: #fff;
   padding: 10px;
-  text-align: center;
+
   border-radius: 15px;
   font-weight: 700;
   text-transform: capitalize;
   cursor: pointer;
 }
-.skills-section :hover {
-  transform: scale(1.1);
-  transition-delay: 0.15s;
-}
+
 .zoom-effect,
 .zoom-effect:hover {
   border-radius: 50%;
@@ -148,6 +137,7 @@ label {
   display: inline-block;
   position: relative;
   opacity: 0.75;
+  text-transform: uppercase;
 }
 .nav-link:hover {
   opacity: 1;

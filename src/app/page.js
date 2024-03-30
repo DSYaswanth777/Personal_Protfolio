@@ -10,6 +10,7 @@ import Contactme_Section from "../components/Contactme_section";
 import "./globals.css";
 import useScrollToSection from "@/components/customHooks/useScrollToSection";
 import Footer from "../components/footer";
+import CallToAction from "@/components/CallToAction";
 
 export default function Home() {
   // Refs for each section
@@ -34,6 +35,7 @@ export default function Home() {
       <Personal_Info ref={sectionRefs.personal} />
       <Projects_Section ref={sectionRefs.projects} />
       {/* <Resume ref={sectionRefs.resume} /> */}
+      {/* <CallToAction/> */}
       <Contactme_Section ref={sectionRefs.contact} />
       <Footer />
     </div>

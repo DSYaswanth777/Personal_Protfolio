@@ -1,14 +1,14 @@
 export const projects = [
-  {
-    id: 3,
-    imageSrc: require("../../public/images/3.png"),
-    title: "Amma The Handmade Spices",
-    description:
-      "   I combined Bootstrap and React custom hooks to craft an efficient application, showcasing impactful cart features and skillful state  management for a seamless user experience. Used React  custom hooks for efficient state management and easy flow of code.",
-    githubLink: "https://www.ammahandmadespices.com/",
-    demoLink: "https://www.ammahandmadespices.com/",
-    techStack: ["React", "ReactStrap"],
-  },
+  // {
+  //   id: 3,
+  //   imageSrc: require("../../public/images/3.png"),
+  //   title: "Amma The Handmade Spices",
+  //   description:
+  //     "   I combined Bootstrap and React custom hooks to craft an efficient application, showcasing impactful cart features and skillful state  management for a seamless user experience. Used React  custom hooks for efficient state management and easy flow of code.",
+  //   githubLink: "https://www.ammahandmadespices.com/",
+  //   demoLink: "https://www.ammahandmadespices.com/",
+  //   techStack: ["React", "ReactStrap"],
+  // },
 
   {
     id: 2,

@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Providers } from "@/providers";
 // Metadata for the website
 export const metadata = {
   title: "Yaswanth's Portfolio",
@@ -40,7 +41,7 @@ export default function RootLayout({ children }) {
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Yaswanth's Portfolio" />
-        <meta name="publisher" content="Yaswanth Dasari"/>
+        <meta name="publisher" content="Yaswanth Dasari" />
         <meta name="robots" content="index, follow" />
         <meta
           name="twitter:description"
@@ -69,9 +70,12 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        <Providers>
+
         {children}
         <SpeedInsights />
         <Analytics />
+        </Providers>
       </body>
     </html>
   );
