@@ -27,7 +27,7 @@ const Hero_Section = forwardRef((props, ref) => {
             </div>
             <article className="ml-0">
               <Reveal>
-                <p className="pb-4 text-xl">Welcome to my Portfolio!</p>
+                <p className="pb-4 text-xl ">Welcome to my Portfolio!</p>
               </Reveal>
               <Reveal>
                 <h1 className="text-2xl md:text-2xl pb-5 ">
