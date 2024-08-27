@@ -22,8 +22,8 @@ const Hero_Section = forwardRef((props, ref) => {
       ref={ref}
       aria-label="Hero Section"
     >
-      <div className="text-center ">
-        <Lottie animationData={Animation} loop={true} className=" mx-auto" />
+      <div className="text-center pt-12 md:pt-8">
+        <Lottie animationData={Animation} loop={true} className=" w-72 md:w-96 mx-auto" />
       </div>
       <div className="text-center flex flex-col gap-2">
         <h1 className="text-4xl font-bold mb-2 ">
