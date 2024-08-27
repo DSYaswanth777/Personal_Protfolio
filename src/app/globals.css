@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 body,
 input,
 textarea {
   background-color: #f9f4f4;
-  color: #1F1F29;
+  color: #1f1f29;
 }
-
 
 @tailwind base;
 @tailwind components;
@@ -69,7 +69,8 @@ textarea {
   --customBlack: #1f1f29;
 }
 body {
-  font-family: myFirstFont !important;
+  font-family: "Outfit", sans-serif;
+
   overflow-x: hidden !important;
 }
 .skills-section {
@@ -88,7 +89,7 @@ body {
 }
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
   .skills-section {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
   }
 }
 .skills-section p {
@@ -115,7 +116,24 @@ body {
 }
 .step-line {
   width: 2px;
-  height: 62%;
+  height: 66%;
+  background: linear-gradient(to bottom, transparent 50%, #333 50%);
+  background-size: 2px 10px;
+  background-repeat: repeat-y;
+  top: 53px;
+  left: -25px;
+}
+.step-dot2 {
+  width: 16px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 50%;
+  top: 55px;
+  left: -30px;
+}
+.step-line2 {
+  width: 2px;
+  height: 60%;
   background: linear-gradient(to bottom, transparent 50%, #333 50%);
   background-size: 2px 10px;
   background-repeat: repeat-y;
@@ -134,11 +152,13 @@ label {
   text-align: left !important;
 }
 .nav-link {
-  color: #1f1f29;
+  color: var(--customBlack) !important;
   display: inline-block;
   position: relative;
-  opacity: 0.75;
-  text-transform: uppercase;
+  font-weight: 600 !important;
+}
+.nav-link-ltr {
+  color: var(--customBlack) !important;
 }
 .nav-link:hover {
   opacity: 1;
@@ -164,4 +184,79 @@ label {
 .section.reveal {
   opacity: 1;
   transform: translateY(0);
+}
+
+.scroll-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust as necessary */
+  overflow: hidden;
+}
+
+.scroll-container .scroll-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.scrolling .scroll-image {
+  transform: translateY(-100%);
+}
+
+.button {
+  padding: 12px 40px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0 !important;
+  z-index: 1;
+}
+
+.button::after,
+.button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+
+.button::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: var(--customBlack);
+  border-radius: 10px;
+}
+
+.button::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
 }

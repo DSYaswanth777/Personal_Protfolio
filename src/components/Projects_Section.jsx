@@ -28,19 +28,23 @@ const Projects_Section = React.forwardRef((props, ref) => {
       </div>
       <div className=" container">
         <div className="image-gallery"></div>
-        {projects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            imageSrc={project.imageSrc}
-            title={project.title}
-            description={project.description}
-            // githubLink={project.githubLink}
-            demoLink={project.demoLink}
-            techStack={project.techStack}
-          />
-        ))}
+        <div className="flex flex-wrap justify-center">
+          {projects.map((project) => (
+            <div key={project.id} className="w-full sm:w-1/2 md:w-1/2 p-2">
+              <ProjectCard
+                imageSrc={project.imageSrc}
+                title={project.title}
+                description={project.description}
+                demoLink={project.demoLink}
+                techStack={project.techStack}
+                type={project.type}
+                involvement={project.involvement}
+              />
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="text-center mt-10 flex items-center justify-center">
+      {/* <div className="text-center mt-10 flex items-center justify-center">
         <Reveal2>
           <a
             href="https://github.com/DSYaswanth777"
@@ -51,7 +55,7 @@ const Projects_Section = React.forwardRef((props, ref) => {
             More Projects
           </a>
         </Reveal2>
-      </div>
+      </div> */}
     </section>
   );
 });

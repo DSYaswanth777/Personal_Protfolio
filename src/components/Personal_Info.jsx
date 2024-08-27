@@ -56,20 +56,39 @@ const Personal_Info = forwardRef((props, ref) => {
                 </div>
               </Reveal>
               <Reveal2>
-                <a
-                  href={"mailto:dsyaswanth777@gmail.com"}
-                  className="underline underline-offset-2 font-extra-bold"
-                  target="_blank"
+                <p
+            
                 >
-                  Hire / Contact Me
-                </a>
+                 05/2023 -  03/2024
+                </p>
+              </Reveal2>
+            </div>
+               <div className="relative">
+              <div className="step-dot"></div>
+              <div className="pt-12"></div>
+              <Reveal>
+                <div className="text-xl font-extra-bold">
+               Web Developer
+                </div>
+              </Reveal>
+              <Reveal2>
+              <p
+            
+                >
+                 03/2024 -  Present
+                </p>
+              </Reveal2>
+              <Reveal2>
+                <div className="text-lg font-bold ">
+               Digital Adventure
+                </div>
               </Reveal2>
             </div>
           </div>
           <div className="border-b-4 md:border-l-4 "></div>
           <div className="relative">
             <div className="step-dot"></div>
-            <div className="step-line"></div>
+            {/* <div className="step-line"></div> */}
             <Reveal>
               <article>
                 <h2 className="text-2xl  text-center font-extra-bold underline underline-offset-4">

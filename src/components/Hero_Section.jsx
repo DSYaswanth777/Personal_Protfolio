@@ -16,73 +16,42 @@ const Hero_Section = forwardRef((props, ref) => {
     window.location.href = "mailto:dsyaswanth777@gmail.com";
   };
 
-
   return (
-    <section className="container md:mx-auto h-full  " ref={ref} aria-label="Hero Section">
-      <div className="flex flex-col md:flex-row  justify-around items-center pt-16 section1 ">
-        <div className="mt-10">
-          <div className="ml-10 mt-10">
-            <div className="w-2/3">
-              <Lottie animationData={Animation} aria-hidden="true"  />
-            </div>
-            <article className="ml-0">
-              <Reveal>
-                <p className="pb-4 text-xl ">Welcome to my Portfolio!</p>
-              </Reveal>
-              <Reveal>
-                <h1 className="text-2xl md:text-2xl pb-5 ">
-                  I am Yaswanth Dasari.
-                </h1>
-              </Reveal>
-              <Reveal>
-                <p className="text-2xl md:text-2xl font-extra-bold pb-4">
-                  Passionate  Web Developer
-                </p>
-              </Reveal>
-              <div className="flex gap-3">
-                <a href={"mailto:dsyaswanth777@gmail.com"} target="_blank">
-                  <Reveal2>
-                    <button
-                      className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack mt-5 hover:border-dark border "
-                      onClick={handleEmailClick}
-                    >
-                      Hire Me!
-                    </button>
-                  </Reveal2>
-                </a>
-                <a
-                  href="DSYaswanth_Resume.pdf"
-                  download="DSYaswanth_Resume.pdf"
-                  target="_blank"
-                >
-                  <Reveal2>
-                    <button className="bg-customBlack p-3 rounded-md shadow-xl  hover:bg-white text-white hover:text-customBlack hover:border-dark border mt-5 ">
-                      Resume
-                    </button>
-                  </Reveal2>
-                </a>
-              </div>
-            </article>
-          </div>
+    <section
+      className="container md:mx-auto h-full flex flex-col justify-center items-center pt-16"
+      ref={ref}
+      aria-label="Hero Section"
+    >
+      <div className="text-center ">
+        <Lottie animationData={Animation} loop={true} className=" mx-auto" />
+      </div>
+      <div className="text-center flex flex-col gap-2">
+        <h1 className="text-4xl font-bold mb-2 ">
+          Hi! I’m <br className="block md:hidden" /> <em className="font-extra-bold"> Yaswanth Dasari</em>,
+        </h1>
+        <h2 className="text-2xl mb-4">A Web Developer & UI/UX Enthusiast</h2>
+        <p className="text-2xl mb- font-bold md:text-4xl  md:font-extra-bold ">
+          Dedicated to crafting exceptional <br /> user experiences and visually
+          stunning websites.
+        </p>
+        <div className="flex gap-12 justify-center align-center mt-6">
+          <a href={"mailto:dsyaswanth777@gmail.com"} target="_blank">
+            <Reveal2>
+              <button className="  button" onClick={handleEmailClick}>
+                Hire Me!
+              </button>
+            </Reveal2>
+          </a>
+          <a
+            href="DSYaswanth_Resume.pdf"
+            download="DSYaswanth_Resume.pdf"
+            target="_blank"
+          >
+            <Reveal2>
+              <button className="  button">Resume</button>
+            </Reveal2>
+          </a>
         </div>
-        <Reveal2>
-          <aside className="flex flex-row md:flex-col gap-7  cursor-pointer pt-20 section2 p-1">
-            {socialLinks.map((socialLink) => (
-              <a
-                href={socialLink.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                key={socialLink.id}
-                aria-label={`Follow on ${socialLink.alt}`}
-                className="bg-white rounded-full p-3 shadow-md relative group zoom-effect "
-              >
-                <div className="flex items-center">
-                  <Image src={socialLink.icon} size={12} alt={socialLink.alt} />
-                </div>
-              </a>
-            ))}
-          </aside>
-        </Reveal2>
       </div>
     </section>
   );

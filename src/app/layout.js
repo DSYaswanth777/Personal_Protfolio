@@ -51,6 +51,10 @@ export default function RootLayout({ children }) {
           name="twitter:image"
           content="../../public/images/twitter_card.png"
         />
+               <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css"
+        />
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -71,10 +75,9 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Providers>
-
-        {children}
-        <SpeedInsights />
-        <Analytics />
+          {children}
+          <SpeedInsights />
+          <Analytics />
         </Providers>
       </body>
     </html>
