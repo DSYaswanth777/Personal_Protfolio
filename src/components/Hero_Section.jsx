@@ -27,7 +27,7 @@ const Hero_Section = forwardRef((props, ref) => {
       </div>
       <div className="text-center flex flex-col gap-2">
         <h1 className="text-4xl font-bold mb-2 ">
-          Hi! I’m <br className="block md:hidden" /> <em className="font-extra-bold"> Yaswanth Dasari</em>,
+    I’m <br className="block md:hidden" /> <em className="font-extra-bold"> Yaswanth Dasari</em>,
         </h1>
         <h2 className="text-2xl mb-4">A Web Developer & UI/UX Enthusiast</h2>
         <p className="text-2xl mb- font-bold md:text-4xl  md:font-extra-bold ">
