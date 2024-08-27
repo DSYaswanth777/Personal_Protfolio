@@ -11,7 +11,7 @@ const ProjectCard = ({
   type,
   involvement,
 }) => (
-  <article className="project-card lg:p-5 p-5 my-12 rounded-bottom rounded-xl flex gap-10 flex-col justify-center items-center">
+  <article className="project-card lg:p-5 p-5  rounded-bottom rounded-xl flex gap-10 flex-col justify-center items-center">
     <div className=" rounded-lg cursor-pointer relative group">
       <Reveal2>
         <Image
