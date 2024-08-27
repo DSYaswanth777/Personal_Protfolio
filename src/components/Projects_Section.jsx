@@ -27,7 +27,7 @@ const Projects_Section = React.forwardRef((props, ref) => {
         </div>
       </div>
       <div className=" container">
-        <div className="image-gallery"></div>
+        {/* <div className="image-gallery"></div> */}
         <div className="flex flex-wrap justify-center">
           {projects.map((project) => (
             <div key={project.id} className="w-full sm:w-1/2 md:w-1/2 p-2">
