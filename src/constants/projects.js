@@ -5,8 +5,8 @@ export const projects = [
     title: "Sai Sanjeevani Yoga",
     description:
       "Focused on development and deployment and minimal design contribution.",
-    githubLink: "https://www.saisanjeevaniyoga.in/",
-    demoLink: "https://www.saisanjeevaniyoga.in/",
+    githubLink: "https://sai-sanjeevani-yoga-clinc.vercel.app/",
+    demoLink: "https://sai-sanjeevani-yoga-clinc.vercel.app/",
     techStack: ["HTML", "CSS", "Bootstrap"],
     type: "Side Project",
     involvement: "Development to Deployment",
