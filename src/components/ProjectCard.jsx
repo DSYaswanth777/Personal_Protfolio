@@ -32,12 +32,12 @@ const ProjectCard = ({
             <Reveal2>
               <div className="flex justify-start align-start gap-4 flex-col lg:flex-row pb-3">
                 <div>
-                  <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-sm md:text-lg  font-medium text-gray-600 ring-2 ring-inset ring-customBlack">
+                  <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-sm md:text-lg  font-medium text-gray-600 ring-2 ring-inset ring-customBlack">
                     {type}
                   </span>
                 </div>
                 <div>
-                  <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-sm md:text-lg font-medium text-gray-600 ring-2 ring-inset ring-customBlack">
+                  <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-sm md:text-lg font-medium text-gray-600 ring-2 ring-inset ring-customBlack">
                     {involvement}
                   </span>
                 </div>
@@ -57,9 +57,11 @@ const ProjectCard = ({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-lg font-bold hover:border-b-2"
+                  aria-label={`View Live of ${title} project`}
                 >
                   View Live
                 </a>
+
                 <GrShare size={20} />
               </div>
             </Reveal2>

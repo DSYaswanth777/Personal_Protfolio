@@ -7,13 +7,17 @@ const Personal_Info = forwardRef((props, ref) => {
       className="container md:mx-auto h-full pt-36"
       ref={ref}
       aria-labelledby="about-me-title"
+      role="region"
     >
       <div className="flex justify-around flex-col items-center">
         <div className="text-center">
           <Reveal>
-            <p className="font-extra-bold text-3xl underline underline-offset-4 text-center px-12 ">
+            <h2
+              id="about-me-title"
+              className="font-extra-bold text-3xl underline underline-offset-4 text-center px-12 "
+            >
               About Me
-            </p>
+            </h2>
           </Reveal>
           <Reveal>
             <p className="text-xl pt-4 font-extra-bold underline underline-offset-4 text-center">
