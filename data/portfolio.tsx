@@ -332,6 +332,8 @@ export const STACK_CHIPS: Chip[] = [
   { label: "OpenAI", slug: "openai", bg: "#412991", fg: "#ffffff", iconUrl: "https://openai.com/favicon.svg" },
   { label: "n8n", slug: "n8n", bg: "#FF6D5A", fg: "#ffffff" },
   { label: "Make", slug: "make", bg: "#FF5CFF", fg: "#ffffff" },
+  { label: "Zapier", slug: "zapier", bg: "#FF4A00", fg: "#ffffff" },
+  { label: "GHL", slug: "gohighlevel", bg: "#111827", fg: "#ffffff", iconUrl: "https://cdn.simpleicons.org/googleanalytics" },
   { label: "Python", slug: "python", bg: "#3776AB", fg: "#ffffff" },
   { label: "WhatsApp", slug: "whatsapp", bg: "#25D366", fg: "#ffffff" },
   { label: "GitHub", slug: "github", bg: "#181717", fg: "#ffffff" },
